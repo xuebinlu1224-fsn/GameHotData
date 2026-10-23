@@ -1,0 +1,714 @@
+{
+  "correction_schema_version": "1.0.0",
+  "document_kind": "snapshot_correction",
+  "correction_id": "playground-section-provenance-20261023T231822Z",
+  "created_at_utc": "2026-10-23T23:18:22Z",
+  "application_mode": "append_only_overlay",
+  "status": "validated_not_applied_to_original_snapshots",
+  "repository": "xuebinlu1224-fsn/GameHotData",
+  "verified_against_commit": "af26f16a82d1e9ca87cb8e17ff4c05af398b0567",
+  "reason": "Prior snapshot templates were keyed only by game ID. The later popular section replaced the trending template for games present in both sections. Deep copying retained the wrong section-specific provenance.",
+  "scope": "Only four selection_evidence fields for six trending memberships in each of two historical snapshots. No metrics, times, positions, entities, covers, descriptions, batch scopes or popular memberships change. This is not a new observation.",
+  "targets": [
+    {
+      "snapshot_path": "2026/10/24/playground_20261023T161006Z.json",
+      "snapshot_url": "https://github.com/xuebinlu1224-fsn/GameHotData/blob/af26f16a82d1e9ca87cb8e17ff4c05af398b0567/2026/10/24/playground_20261023T161006Z.json",
+      "original_git_blob_sha": "0a6d1969678ddfcfe36ddb2cb95c5be69e9b2176",
+      "original_sha256": "7cdd57e059d7d3dd763ea0cc6f25953f3457c561b8014fc0a6d7ed55fe9761d5",
+      "original_byte_size": 105799,
+      "original_observed_at_utc": "2026-10-23T16:09:13.944Z",
+      "corrected_view_sha256": "1ab79831d58230d85380559f139be3bce7f01f065fdb9f4385f18ccf2fde0324",
+      "changed_field_count": 24,
+      "evidence": {
+        "basis": "Original saved same-run rendered-DOM extraction, not current DOM or a later observation. Original baseline section-specific metadata and unaffected same-run trending memberships corroborate the definition.",
+        "capture_artifact_name": "playground_fresh_observed.json",
+        "capture_sha256": "1327918bc6f0d1aaa727b679357f9c9b275bd82528009f85599d0ba0f591cb1c",
+        "source_url": "https://playground.google/",
+        "observed_at_utc": "2026-10-23T16:09:13.944Z",
+        "trending_heading_raw": "热门游戏",
+        "trending_definition_raw": "过去 24 小时内玩家数量增幅最大",
+        "popular_heading_raw": "热门游戏",
+        "popular_selected_tab_raw": "最热门游戏",
+        "card_memberships": [
+          {
+            "platform_id": "1074005397800118085",
+            "title_raw": "CATacombs",
+            "record_pointer": "/batches/0/records/0",
+            "display_position": 1,
+            "game_url": "https://playground.google/game/1074005397800118085?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "4373179198243961322",
+            "title_raw": "Coastal Cruiser",
+            "record_pointer": "/batches/0/records/1",
+            "display_position": 2,
+            "game_url": "https://playground.google/game/4373179198243961322?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "3482930674592561450",
+            "title_raw": "Midnight Pursuit",
+            "record_pointer": "/batches/0/records/2",
+            "display_position": 3,
+            "game_url": "https://playground.google/game/3482930674592561450?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "1521587251058648535",
+            "title_raw": "Grumpy Knight",
+            "record_pointer": "/batches/0/records/3",
+            "display_position": 4,
+            "game_url": "https://playground.google/game/1521587251058648535?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "1512903382326067257",
+            "title_raw": "Westbound Frontier",
+            "record_pointer": "/batches/0/records/4",
+            "display_position": 5,
+            "game_url": "https://playground.google/game/1512903382326067257?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "8566014825859277124",
+            "title_raw": "Oregon Quest 3D",
+            "record_pointer": "/batches/0/records/6",
+            "display_position": 7,
+            "game_url": "https://playground.google/game/8566014825859277124?ref=trending_games",
+            "section_ref": "trending_games"
+          }
+        ]
+      },
+      "patch_format": "RFC6902 JSON Patch; test and replace only; apply transactionally to an in-memory copy after checking original SHA-256",
+      "patch": [
+        {
+          "op": "test",
+          "path": "/batches/0/scope/surface",
+          "value": "homepage_trending_carousel"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/entity/platform_id",
+          "value": "1074005397800118085"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/entity/platform_id",
+          "value": "4373179198243961322"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/entity/platform_id",
+          "value": "3482930674592561450"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/entity/platform_id",
+          "value": "1521587251058648535"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/entity/platform_id",
+          "value": "1512903382326067257"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/entity/platform_id",
+          "value": "8566014825859277124"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        }
+      ]
+    },
+    {
+      "snapshot_path": "2026/10/24/playground_20261023T220934Z.json",
+      "snapshot_url": "https://github.com/xuebinlu1224-fsn/GameHotData/blob/af26f16a82d1e9ca87cb8e17ff4c05af398b0567/2026/10/24/playground_20261023T220934Z.json",
+      "original_git_blob_sha": "23929d717fe5f4f0f11c121ca90b9262c1d85ac8",
+      "original_sha256": "0bbb513af7266bb2593ac0901ffdf82d469bd884743c189b9936252c6d01b927",
+      "original_byte_size": 133646,
+      "original_observed_at_utc": "2026-10-23T22:07:06.401Z",
+      "corrected_view_sha256": "46604e62d37e2c7d7ed8714331a1fdb039548e75c7fe048599a53711bb0ff90b",
+      "changed_field_count": 24,
+      "evidence": {
+        "basis": "Original saved same-run rendered-DOM extraction, not current DOM or a later observation. Original baseline section-specific metadata and unaffected same-run trending memberships corroborate the definition.",
+        "capture_artifact_name": "playground_observed.json",
+        "capture_sha256": "19a7d31002612ffe470904ee029cee0168e0f6de51dfe22125f39b95cb752ce8",
+        "source_url": "https://playground.google/",
+        "observed_at_utc": "2026-10-23T22:07:06.401Z",
+        "trending_heading_raw": "热门游戏",
+        "trending_definition_raw": "过去 24 小时内玩家数量增幅最大",
+        "popular_heading_raw": "热门游戏",
+        "popular_selected_tab_raw": "最热门游戏",
+        "card_memberships": [
+          {
+            "platform_id": "1074005397800118085",
+            "title_raw": "CATacombs",
+            "record_pointer": "/batches/0/records/0",
+            "display_position": 1,
+            "game_url": "https://playground.google/game/1074005397800118085?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "4373179198243961322",
+            "title_raw": "Coastal Cruiser",
+            "record_pointer": "/batches/0/records/1",
+            "display_position": 2,
+            "game_url": "https://playground.google/game/4373179198243961322?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "3482930674592561450",
+            "title_raw": "Midnight Pursuit",
+            "record_pointer": "/batches/0/records/2",
+            "display_position": 3,
+            "game_url": "https://playground.google/game/3482930674592561450?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "1521587251058648535",
+            "title_raw": "Grumpy Knight",
+            "record_pointer": "/batches/0/records/3",
+            "display_position": 4,
+            "game_url": "https://playground.google/game/1521587251058648535?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "1512903382326067257",
+            "title_raw": "Westbound Frontier",
+            "record_pointer": "/batches/0/records/4",
+            "display_position": 5,
+            "game_url": "https://playground.google/game/1512903382326067257?ref=trending_games",
+            "section_ref": "trending_games"
+          },
+          {
+            "platform_id": "8566014825859277124",
+            "title_raw": "Oregon Quest 3D",
+            "record_pointer": "/batches/0/records/6",
+            "display_position": 7,
+            "game_url": "https://playground.google/game/8566014825859277124?ref=trending_games",
+            "section_ref": "trending_games"
+          }
+        ]
+      },
+      "patch_format": "RFC6902 JSON Patch; test and replace only; apply transactionally to an in-memory copy after checking original SHA-256",
+      "patch": [
+        {
+          "op": "test",
+          "path": "/batches/0/scope/surface",
+          "value": "homepage_trending_carousel"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/entity/platform_id",
+          "value": "1074005397800118085"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/0/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/0/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/entity/platform_id",
+          "value": "4373179198243961322"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/1/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/1/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/entity/platform_id",
+          "value": "3482930674592561450"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/2/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/2/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/entity/platform_id",
+          "value": "1521587251058648535"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/3/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/3/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/entity/platform_id",
+          "value": "1512903382326067257"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/4/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/4/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/entity/platform_id",
+          "value": "8566014825859277124"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/section_name_raw",
+          "value": "热门游戏 / 最热门游戏"
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/section_name_raw",
+          "value": "热门游戏"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/section_definition_raw",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/section_definition_raw",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/ranking_method",
+          "value": null
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/ranking_method",
+          "value": "过去 24 小时内玩家数量增幅最大"
+        },
+        {
+          "op": "test",
+          "path": "/batches/0/records/6/selection_evidence/note",
+          "value": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+        },
+        {
+          "op": "replace",
+          "path": "/batches/0/records/6/selection_evidence/note",
+          "value": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+        }
+      ]
+    }
+  ],
+  "total_changed_record_memberships": 12,
+  "total_changed_field_values": 48
+}
