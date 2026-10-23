@@ -1,0 +1,2411 @@
+{
+  "schema_version": "2.0.0",
+  "document_kind": "public_ui_sample",
+  "data_policy": {
+    "raw_media_storage": "none",
+    "content_storage": "factual metadata, short evidence labels and original gameplay paraphrases only",
+    "rights_note": "Public visibility alone does not establish republication rights. No full descriptions, images, video or game assets are stored."
+  },
+  "batches": [
+    {
+      "batch_id": "crazygames-20261023T150734Z",
+      "source": {
+        "platform": "crazygames",
+        "url": "https://www.crazygames.com/",
+        "method": "public_rendered_ui_cloud_browser",
+        "access_context": "logged_out",
+        "ui_language_observed": "English",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-23T15:06:40Z",
+        "end": "2026-10-23T15:07:34Z"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-23"
+      },
+      "scope": {
+        "surface": "homepage_regional_carousel_and_game_detail_pages",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "First 10 cards in the homepage Top games in US today section in DOM order. Inspect detail pages for the first five only.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 10,
+        "detail_pages_inspected": 5,
+        "source_extensions": {
+          "homepage_other_labels_observed": [
+            "Featured games",
+            "CrazyGames Originals",
+            "Can’t stop playing",
+            "New games",
+            "Leaderboards"
+          ],
+          "sidebar_popularity_link_observed": {
+            "label": "Hot Games",
+            "url": "https://www.crazygames.com/hot",
+            "visited": false
+          }
+        }
+      },
+      "limitations": [
+        "Not a complete catalog, global ranking, representative sample or measured heat score.",
+        "One snapshot cannot establish growth, velocity, retention or a trend.",
+        "Homepage US label describes the observed surface; user location was not requested or inferred.",
+        "Only five detail pages were inspected; remaining five records are discovery-only.",
+        "Vote counts are rounded and their accumulation window is unspecified. Ratings explicitly reference the last six months. Do not calculate the rating from vote totals.",
+        "No game-level plays, active users or concurrent users were observed. Missing values are null, not zero.",
+        "Detail pages may load embedded games automatically; no gameplay controls, videos, downloads, login or hidden APIs were used.",
+        "Date labels are preserved with their displayed precision; release-date disagreements are retained rather than silently normalized."
+      ],
+      "records": [
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/bloxdhop-io",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/bloxdhop-io",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Bloxd.io",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:07:00Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Bloxd.io",
+              "basis": "site_game_detail_identity",
+              "evidence": "https://www.crazygames.com/game/bloxdhop-io",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 1,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 8.4,
+              "unit": "rating_score",
+              "raw_value": "8.4 ( based on last 6 months )",
+              "raw_text": "8.4 ( based on last 6 months )",
+              "semantics": "Displayed site rating; do not treat as a play count, current popularity or lifetime approval ratio. The scale maximum was not explicitly stated in the observed text.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "last_6_months_as_labeled",
+              "source_url": "https://www.crazygames.com/game/bloxdhop-io",
+              "observed_at_utc": "2026-10-23T15:07:00Z"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 6700000,
+              "unit": "likes",
+              "raw_value": "6.7M",
+              "raw_text": "6.7M likes and 1.3M dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/bloxdhop-io",
+              "observed_at_utc": "2026-10-23T15:07:00Z"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 1300000,
+              "unit": "dislikes",
+              "raw_value": "1.3M",
+              "raw_text": "6.7M likes and 1.3M dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/bloxdhop-io",
+              "observed_at_utc": "2026-10-23T15:07:00Z"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/bloxdhop-io",
+              "observed_at_utc": "2026-10-23T15:07:00Z"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/bloxdhop-io",
+              "observed_at_utc": "2026-10-23T15:07:00Z"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "developer": "Arthur",
+            "release_header_raw": "March 2021",
+            "release_body_raw": null,
+            "last_updated_header_raw": null,
+            "last_updated_body_raw": null,
+            "game_engine_raw": "Externally hosted (iframe)",
+            "platforms_raw": "Browser (desktop, mobile, tablet), CrazyGames App (iOS, Android), App Store (iOS, Android)",
+            "breadcrumb_labels": [
+              ".io",
+              "Adventure",
+              "Minecraft"
+            ],
+            "tag_labels": [
+              ".io",
+              "Meme & bloxy",
+              "Sandbox",
+              "Mobile",
+              "Parkour",
+              "Minecraft",
+              "Jumping",
+              "Third Person Shooter",
+              "Building",
+              "With friends",
+              "Multiplayer",
+              "Block"
+            ],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": "Voxel-style multiplayer adventure mixing parkour, resource collection, crafting, building and combat across several modes.",
+            "summary_basis": "own_paraphrase_of_visible_page_text",
+            "metadata_conflicts": [
+              {
+                "field": "release_date",
+                "header_raw": "March 2021",
+                "body_raw": "February 2021",
+                "resolution": "Unresolved; retain both rather than inventing an exact date."
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/openfront-gsw",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/openfront-gsw",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Openfront",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:07:20Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Openfront",
+              "basis": "site_game_detail_identity",
+              "evidence": "https://www.crazygames.com/game/openfront-gsw",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 2,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 3.9,
+              "unit": "rating_score",
+              "raw_value": "3.9 ( based on last 6 months )",
+              "raw_text": "3.9 ( based on last 6 months )",
+              "semantics": "Displayed site rating; do not treat as a play count, current popularity or lifetime approval ratio. The scale maximum was not explicitly stated in the observed text.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "last_6_months_as_labeled",
+              "source_url": "https://www.crazygames.com/game/openfront-gsw",
+              "observed_at_utc": "2026-10-23T15:07:20Z"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 185000,
+              "unit": "likes",
+              "raw_value": "185K",
+              "raw_text": "185K likes and 228K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/openfront-gsw",
+              "observed_at_utc": "2026-10-23T15:07:20Z"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 228000,
+              "unit": "dislikes",
+              "raw_value": "228K",
+              "raw_text": "185K likes and 228K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/openfront-gsw",
+              "observed_at_utc": "2026-10-23T15:07:20Z"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/openfront-gsw",
+              "observed_at_utc": "2026-10-23T15:07:20Z"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/openfront-gsw",
+              "observed_at_utc": "2026-10-23T15:07:20Z"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "developer": null,
+            "release_header_raw": "January 2026",
+            "release_body_raw": null,
+            "last_updated_header_raw": "July 2026",
+            "last_updated_body_raw": "Jul 13, 2026",
+            "game_engine_raw": "Externally hosted (iframe)",
+            "platforms_raw": "Browser (desktop-only), Steam",
+            "breadcrumb_labels": [
+              ".io",
+              "Battle",
+              "War"
+            ],
+            "tag_labels": [
+              ".io",
+              "Battle",
+              "With friends",
+              "War",
+              "Mouse",
+              "Multiplayer"
+            ],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": "Map-based territory conquest with economic development, alliances and attacks against rival factions.",
+            "summary_basis": "own_paraphrase_of_visible_page_text",
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/mahjongg-solitaire",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Mahjongg Solitaire",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:07:25Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Mahjongg Solitaire",
+              "basis": "site_game_detail_identity",
+              "evidence": "https://www.crazygames.com/game/mahjongg-solitaire",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 3,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 7.8,
+              "unit": "rating_score",
+              "raw_value": "7.8 ( based on last 6 months )",
+              "raw_text": "7.8 ( based on last 6 months )",
+              "semantics": "Displayed site rating; do not treat as a play count, current popularity or lifetime approval ratio. The scale maximum was not explicitly stated in the observed text.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "last_6_months_as_labeled",
+              "source_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+              "observed_at_utc": "2026-10-23T15:07:25Z"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 152000,
+              "unit": "likes",
+              "raw_value": "152K",
+              "raw_text": "152K likes and 42K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+              "observed_at_utc": "2026-10-23T15:07:25Z"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 42000,
+              "unit": "dislikes",
+              "raw_value": "42K",
+              "raw_text": "152K likes and 42K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+              "observed_at_utc": "2026-10-23T15:07:25Z"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+              "observed_at_utc": "2026-10-23T15:07:25Z"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+              "observed_at_utc": "2026-10-23T15:07:25Z"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "developer": "Arkadium",
+            "release_header_raw": "August 2022",
+            "release_body_raw": null,
+            "last_updated_header_raw": "August 2022",
+            "last_updated_body_raw": "Aug 03, 2022",
+            "game_engine_raw": "HTML5",
+            "platforms_raw": "Browser (desktop, mobile, tablet), CrazyGames App (iOS, Android), App Store (Android)",
+            "breadcrumb_labels": [
+              "Puzzle",
+              "Board",
+              "Mahjong"
+            ],
+            "tag_labels": [
+              "Puzzle",
+              "Timeless classics",
+              "Mobile",
+              "3D",
+              "Mahjong",
+              "Logic",
+              "Mouse"
+            ],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": "Timed mahjong tile matching with hints and no shuffle option; clear available pairs from the board.",
+            "summary_basis": "own_paraphrase_of_visible_page_text",
+            "metadata_conflicts": [
+              {
+                "field": "release_date",
+                "header_raw": "August 2022",
+                "body_raw": "October 2016",
+                "resolution": "Unresolved; site listing and original release may differ, but the page does not explain the distinction."
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Piece of Cake: Merge and Bake",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:07:30Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Piece of Cake: Merge and Bake",
+              "basis": "site_game_detail_identity",
+              "evidence": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 4,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 8.3,
+              "unit": "rating_score",
+              "raw_value": "8.3 ( based on last 6 months )",
+              "raw_text": "8.3 ( based on last 6 months )",
+              "semantics": "Displayed site rating; do not treat as a play count, current popularity or lifetime approval ratio. The scale maximum was not explicitly stated in the observed text.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "last_6_months_as_labeled",
+              "source_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+              "observed_at_utc": "2026-10-23T15:07:30Z"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 275000,
+              "unit": "likes",
+              "raw_value": "275K",
+              "raw_text": "275K likes and 52K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+              "observed_at_utc": "2026-10-23T15:07:30Z"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 52000,
+              "unit": "dislikes",
+              "raw_value": "52K",
+              "raw_text": "275K likes and 52K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+              "observed_at_utc": "2026-10-23T15:07:30Z"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+              "observed_at_utc": "2026-10-23T15:07:30Z"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+              "observed_at_utc": "2026-10-23T15:07:30Z"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "developer": "HG POINT LTD",
+            "release_header_raw": "October 2024",
+            "release_body_raw": null,
+            "last_updated_header_raw": "May 2025",
+            "last_updated_body_raw": "May 28, 2025",
+            "game_engine_raw": "Externally hosted (iframe)",
+            "platforms_raw": "Browser (desktop, mobile, tablet)",
+            "breadcrumb_labels": [
+              "Puzzle",
+              "Casual",
+              "Merge"
+            ],
+            "tag_labels": [
+              "Puzzle",
+              "Mobile",
+              "Food",
+              "Premium Perks",
+              "Story",
+              "Cooking",
+              "Restaurant",
+              "2D",
+              "Match 3",
+              "Can’t stop playing",
+              "Mouse",
+              "Casual",
+              "Merge"
+            ],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": "Merge matching food items to fulfill customer orders, earn renovation money and advance a family-cafe story.",
+            "summary_basis": "own_paraphrase_of_visible_page_text",
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/ragdoll-archers",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/ragdoll-archers",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Ragdoll Archers",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:07:34Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Ragdoll Archers",
+              "basis": "site_game_detail_identity",
+              "evidence": "https://www.crazygames.com/game/ragdoll-archers",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 5,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 9.1,
+              "unit": "rating_score",
+              "raw_value": "9.1 ( based on last 6 months )",
+              "raw_text": "9.1 ( based on last 6 months )",
+              "semantics": "Displayed site rating; do not treat as a play count, current popularity or lifetime approval ratio. The scale maximum was not explicitly stated in the observed text.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "last_6_months_as_labeled",
+              "source_url": "https://www.crazygames.com/game/ragdoll-archers",
+              "observed_at_utc": "2026-10-23T15:07:34Z"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 2500000,
+              "unit": "likes",
+              "raw_value": "2.5M",
+              "raw_text": "2.5M likes and 224K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/ragdoll-archers",
+              "observed_at_utc": "2026-10-23T15:07:34Z"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 224000,
+              "unit": "dislikes",
+              "raw_value": "224K",
+              "raw_text": "2.5M likes and 224K dislikes",
+              "semantics": "Displayed vote count, not unique users or plays. Rounded suffix converted numerically; exact underlying count and accumulation window not stated.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; M × 1000000. Source rounding method unknown.",
+              "source_url": "https://www.crazygames.com/game/ragdoll-archers",
+              "observed_at_utc": "2026-10-23T15:07:34Z"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/ragdoll-archers",
+              "observed_at_utc": "2026-10-23T15:07:34Z"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://www.crazygames.com/game/ragdoll-archers",
+              "observed_at_utc": "2026-10-23T15:07:34Z"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "developer": "Ericetto",
+            "release_header_raw": null,
+            "release_body_raw": [
+              "May 2023 (WebGL)",
+              "September 2023 (Android)"
+            ],
+            "last_updated_header_raw": "July 2024",
+            "last_updated_body_raw": "Jul 09, 2024",
+            "game_engine_raw": "HTML5",
+            "platforms_raw": "Browser (desktop, mobile, tablet), CrazyGames App (iOS, Android), App Store (Android, MSN)",
+            "breadcrumb_labels": [
+              "Arcade",
+              "Shooting",
+              "Archery"
+            ],
+            "tag_labels": [
+              "Arcade",
+              "Mobile",
+              "2 Player",
+              "5-minute fun",
+              "Arena",
+              "Physics",
+              "Co-op",
+              "Stickman",
+              "Archery",
+              "Casual",
+              "Ragdoll"
+            ],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": "Physics-driven stickman archery with ability upgrades, varied ammunition, solo survival, two-player competition and cooperative play.",
+            "summary_basis": "own_paraphrase_of_visible_page_text",
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/piles-of-mahjong-jhb",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/piles-of-mahjong-jhb",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Piles of Mahjong",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:06:53Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Piles of Mahjong",
+              "basis": "homepage_card_label",
+              "evidence": "https://www.crazygames.com/",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 6,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "developer": null,
+            "release_header_raw": null,
+            "release_body_raw": null,
+            "last_updated_header_raw": null,
+            "last_updated_body_raw": null,
+            "game_engine_raw": null,
+            "platforms_raw": null,
+            "breadcrumb_labels": [],
+            "tag_labels": [],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": null,
+            "summary_basis": null,
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/words-of-wonders",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/words-of-wonders",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Words of Wonders",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:06:53Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Words of Wonders",
+              "basis": "homepage_card_label",
+              "evidence": "https://www.crazygames.com/",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 7,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "developer": null,
+            "release_header_raw": null,
+            "release_body_raw": null,
+            "last_updated_header_raw": null,
+            "last_updated_body_raw": null,
+            "game_engine_raw": null,
+            "platforms_raw": null,
+            "breadcrumb_labels": [],
+            "tag_labels": [],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": null,
+            "summary_basis": null,
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/screw-out-bolts-and-nuts",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/screw-out-bolts-and-nuts",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Screw Out: Bolts and Nuts",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:06:53Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Screw Out: Bolts and Nuts",
+              "basis": "homepage_card_label",
+              "evidence": "https://www.crazygames.com/",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 8,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "developer": null,
+            "release_header_raw": null,
+            "release_body_raw": null,
+            "last_updated_header_raw": null,
+            "last_updated_body_raw": null,
+            "game_engine_raw": null,
+            "platforms_raw": null,
+            "breadcrumb_labels": [],
+            "tag_labels": [],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": null,
+            "summary_basis": null,
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/8-ball-pool-billiards-multiplayer",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/8-ball-pool-billiards-multiplayer",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "8 Ball Pool Billiards Multiplayer",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:06:53Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "8 Ball Pool Billiards Multiplayer",
+              "basis": "homepage_card_label",
+              "evidence": "https://www.crazygames.com/",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 9,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "developer": null,
+            "release_header_raw": null,
+            "release_body_raw": null,
+            "last_updated_header_raw": null,
+            "last_updated_body_raw": null,
+            "game_engine_raw": null,
+            "platforms_raw": null,
+            "breadcrumb_labels": [],
+            "tag_labels": [],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": null,
+            "summary_basis": null,
+            "metadata_conflicts": []
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/mage-tower-idle-defense",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/mage-tower-idle-defense",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Mage Castle Idle Defense",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:06:53Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Mage Castle Idle Defense",
+              "basis": "homepage_card_label",
+              "evidence": "https://www.crazygames.com/",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-23T15:06:53Z",
+            "section_name_raw": "Top games in US today",
+            "region_label_raw": "US",
+            "display_position": 10,
+            "position_basis": "one_based_DOM_card_order_in_section_not_visual_grid_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Section container exposed test ID carousel-recommended. Regional headline and card placement are selection evidence, not independently verified global popularity."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail page was outside this bounded collection.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching game-level quantity was observed; never inferred from votes or carousel order.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "developer": null,
+            "release_header_raw": null,
+            "release_body_raw": null,
+            "last_updated_header_raw": null,
+            "last_updated_body_raw": null,
+            "game_engine_raw": null,
+            "platforms_raw": null,
+            "breadcrumb_labels": [],
+            "tag_labels": [],
+            "tag_count_note": "Numbers beside category/tag links count catalog items, not game players; deliberately excluded from game metrics.",
+            "gameplay_summary": null,
+            "summary_basis": null,
+            "metadata_conflicts": []
+          }
+        }
+      ]
+    },
+    {
+      "batch_id": "crazygames-hot-20261023T150921Z",
+      "source": {
+        "platform": "crazygames",
+        "url": "https://www.crazygames.com/hot",
+        "method": "public_rendered_ui_cloud_browser",
+        "access_context": "logged_out",
+        "ui_language_observed": "English",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-23T15:09:16Z",
+        "end": "2026-10-23T15:09:21Z"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-23"
+      },
+      "scope": {
+        "surface": "hot_games_listing",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "First 10 game cards in rendered DOM order on the explicit Hot Games page. No game details visited in this batch.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 10,
+        "detail_pages_inspected": 0,
+        "source_extensions": {
+          "page_heading_raw": "HOT GAMES",
+          "page_title_raw": "Hot Games This Month on CrazyGames",
+          "time_window_evidence_raw": "These games are blowing up in the last 24 hours",
+          "time_window_interpretation": "Visible page introduction says last 24 hours while page title says This Month. Both retained; methodology and exact aggregation window unverified."
+        }
+      },
+      "limitations": [
+        "Display position is not an official numeric rank.",
+        "The page labels these games hot but exposes no underlying growth, plays, users or scoring formula in the inspected listing.",
+        "Visible last-24-hours text conflicts with the monthly document title; do not silently choose an aggregation window.",
+        "Discovery-only batch: no rating, votes, developer or gameplay details collected.",
+        "Only the first ten cards were retained, not the entire page.",
+        "Game URLs were observed on cards; destination detail pages were not opened in this batch."
+      ],
+      "records": [
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/all-out-nju",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/all-out-nju",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "All Out",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "All Out",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 1,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/mahjong-classic-webgl",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/mahjong-classic-webgl",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Mahjong Online",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Mahjong Online",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 2,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/spider-solitaire-2-suits",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/spider-solitaire-2-suits",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Spider Solitaire 2 Suits",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Spider Solitaire 2 Suits",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 3,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/bubble-shooter-classic",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/bubble-shooter-classic",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Bubble Shooter",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Bubble Shooter",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 4,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/hole-io-uyt",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/hole-io-uyt",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Hole.io",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Hole.io",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 5,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/shred-the-evidence",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/shred-the-evidence",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Shred the Evidence",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Shred the Evidence",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 6,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/lucky-brainrot-blocks-online-ehx",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/lucky-brainrot-blocks-online-ehx",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Lucky Brainrot Blocks Online",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Lucky Brainrot Blocks Online",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 7,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/bridge-race",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/bridge-race",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Bridge Race",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Bridge Race",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 8,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/coral-isle-2-tropical-stories",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/coral-isle-2-tropical-stories",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Coral Isle 2: Tropical Stories",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Coral Isle 2: Tropical Stories",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 9,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://www.crazygames.com/game/kitty-cat-burger-restaurant",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/kitty-cat-burger-restaurant",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Kitty Cat Burger Restaurant",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-10-23T15:09:21Z",
+          "game_associations": [
+            {
+              "game_id": null,
+              "label_raw": "Kitty Cat Burger Restaurant",
+              "basis": "hot_page_card_label",
+              "evidence": "https://www.crazygames.com/hot",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-23T15:09:21Z",
+            "section_name_raw": "HOT GAMES",
+            "display_position": 10,
+            "position_basis": "one_based_DOM_card_order_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Explicit site Hot Games surface; placement is a site selection signal, not an independently measured heat score."
+          },
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Game detail not collected in this batch; card supplies selection evidence only.",
+              "availability": "not_collected",
+              "precision": null,
+              "time_basis": null,
+              "source_url": null,
+              "observed_at_utc": null
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "gameplay_summary": null
+          }
+        }
+      ]
+    }
+  ],
+  "collection_completed_at_utc": "2026-10-23T15:09:21Z"
+}
