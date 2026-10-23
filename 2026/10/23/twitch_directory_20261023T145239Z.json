@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0.0",
+  "collection_id": "twitch-directory-20261023T145239Z",
+  "collection_type": "one_off_public_ui_snapshot",
+  "source": "Twitch",
+  "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+  "observed_at_utc": "2026-10-23T14:52:39Z",
+  "observation_window_utc": {
+    "start": "2026-10-23T14:52:35Z",
+    "end": "2026-10-23T14:52:39Z"
+  },
+  "date_partition_timezone": "Asia/Shanghai",
+  "collection_method": "Cloud browser ordinary rendered accessibility-tree inspection; visible sort control selected. No hidden endpoints, authenticated requests, video downloads, or pagination.",
+  "scope": {
+    "page": "Browse / Categories (all categories)",
+    "sort_raw": "观众人数（高到低）",
+    "sort": "viewer_count_descending",
+    "search_query": null,
+    "category_tag_filter": null,
+    "ui_language_observed": "Chinese",
+    "login_state": "Logged out; login and signup controls shown",
+    "sampling_rule": "First 10 named video-game categories encountered in rendered order, excluding event and non-video-game category cards. Not a complete or random platform sample.",
+    "excluded_cards_encountered": [
+      "Stream-o-Ween",
+      "谈天说地",
+      "IRL",
+      "Slots",
+      "Always On"
+    ],
+    "sample_position_definition": "1-based position within these selected 10 records; not an official category rank.",
+    "record_count": 10
+  },
+  "analysis_readiness": {
+    "supports": [
+      "Comparison of displayed Twitch live viewing interest within this bounded snapshot",
+      "Future like-for-like time-series comparisons keyed by source_category_url"
+    ],
+    "does_not_support": [
+      "Growth or trend claims from a single snapshot",
+      "Unique viewers, total players, sales, revenue, or cross-platform popularity",
+      "Gameplay, release date, or streamer concentration claims"
+    ],
+    "future_comparison_requirements": [
+      "Repeat same source, sort, scope and measurement semantics with timestamps",
+      "Treat absent categories as not sampled, never zero",
+      "Account for approximate rounded display, time-of-day, major events and limited sample coverage",
+      "Do not sum or equate Twitch viewers with Steam players"
+    ]
+  },
+  "caveats": [
+    "Single point-in-time observational sample, not a hot-game verdict.",
+    "Live metrics may update between page load and read; observed_at is capture completion time.",
+    "All 10 captured values use abbreviated 万 notation and are approximate.",
+    "Page displays no numeric category rank; category_rank is null.",
+    "Category labels and links are recorded as shown, without external game-identity or gameplay verification.",
+    "The all-categories page includes non-game and event cards; exclusions above were applied by the collector."
+  ],
+  "records": [
+    {
+      "sample_position": 1,
+      "game_title": "League of Legends",
+      "source_category_url": "https://www.twitch.tv/directory/category/league-of-legends",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 20.4万 名观众在观看 League of Legends",
+        "raw_value": "20.4万",
+        "value_approx": 204000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 2,
+      "game_title": "Call of Duty: Modern Warfare 4",
+      "source_category_url": "https://www.twitch.tv/directory/category/call-of-duty-modern-warfare-4",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 10.6万 名观众在观看 Call of Duty: Modern Warfare 4",
+        "raw_value": "10.6万",
+        "value_approx": 106000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 3,
+      "game_title": "Grand Theft Auto V",
+      "source_category_url": "https://www.twitch.tv/directory/category/grand-theft-auto-v",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 8.2万 名观众在观看 Grand Theft Auto V",
+        "raw_value": "8.2万",
+        "value_approx": 82000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 4,
+      "game_title": "Minecraft",
+      "source_category_url": "https://www.twitch.tv/directory/category/minecraft",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 7.9万 名观众在观看 Minecraft",
+        "raw_value": "7.9万",
+        "value_approx": 79000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 5,
+      "game_title": "Counter-Strike",
+      "source_category_url": "https://www.twitch.tv/directory/category/counter-strike",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 7.6万 名观众在观看 Counter-Strike",
+        "raw_value": "7.6万",
+        "value_approx": 76000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 6,
+      "game_title": "Dota 2",
+      "source_category_url": "https://www.twitch.tv/directory/category/dota-2",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 7.4万 名观众在观看 Dota 2",
+        "raw_value": "7.4万",
+        "value_approx": 74000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 7,
+      "game_title": "VALORANT",
+      "source_category_url": "https://www.twitch.tv/directory/category/valorant",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 5.7万 名观众在观看 VALORANT",
+        "raw_value": "5.7万",
+        "value_approx": 57000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 8,
+      "game_title": "World of Warcraft",
+      "source_category_url": "https://www.twitch.tv/directory/category/world-of-warcraft",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 4.3万 名观众在观看 World of Warcraft",
+        "raw_value": "4.3万",
+        "value_approx": 43000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 9,
+      "game_title": "ELDEN RING",
+      "source_category_url": "https://www.twitch.tv/directory/category/elden-ring",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 3.3万 名观众在观看 ELDEN RING",
+        "raw_value": "3.3万",
+        "value_approx": 33000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    },
+    {
+      "sample_position": 10,
+      "game_title": "Overwatch",
+      "source_category_url": "https://www.twitch.tv/directory/category/overwatch-2",
+      "source_url": "https://www.twitch.tv/directory?sort=VIEWER_COUNT",
+      "observed_at_utc": "2026-10-23T14:52:39Z",
+      "category_rank": null,
+      "metric": {
+        "name": "live_category_viewers",
+        "raw_text": "有 2.8万 名观众在观看 Overwatch",
+        "raw_value": "2.8万",
+        "value_approx": 28000,
+        "unit": "viewers",
+        "is_approximate": true,
+        "parsing_rule": "万 means 10,000; abbreviated display multiplied by 10,000. Source rounding method unknown."
+      }
+    }
+  ],
+  "observed_at_local": "2026-10-23T22:52:39+08:00",
+  "collection_status": "success",
+  "analysis_status": {
+    "current_attention": "observed_live_viewers_available",
+    "growth": "insufficient_history",
+    "cross_platform_validation": "not_collected",
+    "hot_game_verdict": null
+  }
+}
