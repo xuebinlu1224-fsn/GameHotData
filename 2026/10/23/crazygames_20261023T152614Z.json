@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "document_kind": "fresh_public_ui_test_run",
   "collection_completed_at_utc": "2026-10-23T15:26:14Z",
   "partition": {
@@ -19,8 +19,7 @@
     "A single snapshot cannot establish growth or trend.",
     "Metric source and timestamp inherit the inspected record detail_source_url and observed_at_utc; uninspected metrics remain null.",
     "Category/tag badge counts count catalog items and are excluded from game metrics.",
-    "No login, hidden API, manual gameplay, video playback or download used. Embedded games may load automatically; an ordinary game alert was dismissed to continue navigation.",
-    "Only factual metadata and original summaries stored, not full descriptions or media."
+    "The original metric collection used no login or hidden API. Later enrichment downloaded only observed cover thumbnails; embedded games may load automatically when detail pages are inspected, but no manual gameplay or video playback was performed."
   ],
   "batches": [
     {
@@ -146,6 +145,32 @@
               "body": "February 2021",
               "resolution": "unresolved"
             }
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/bloxdhop-io_16x9/20260907141432/bloxdhop-io_16x9-cover?metadata=none&quality=85&width=675&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/86216cea2528b7c34869249883d06aa656dcbd81d48cf4b6a02a0e3032153b57.avif",
+            "sha256": "86216cea2528b7c34869249883d06aa656dcbd81d48cf4b6a02a0e3032153b57",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:32.186Z",
+            "status": "downloaded",
+            "width": 675,
+            "height": 379,
+            "byte_size": 32271,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "方块风格的多人冒险游戏，包含资源采集、制作、跑酷、建造和战斗等玩法。",
+            "source_urls": [
+              "https://www.crazygames.com/game/bloxdhop-io"
+            ],
+            "basis": "chinese_translation_of_existing_visible_detail_summary",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T15:25:25Z"
           }
         },
         {
@@ -238,6 +263,32 @@
             "platforms_raw": "Browser (desktop-only), Steam",
             "gameplay_summary": "Territory conquest combining economic development, alliances and attacks.",
             "summary_basis": "own_paraphrase_of_visible_text"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/openfront-gsw_16x9/20260515051210/openfront-gsw_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/f83aa8cf32564897cc2e4ead272fe24d07d94388f90654a94f59563668ac1ac5.avif",
+            "sha256": "f83aa8cf32564897cc2e4ead272fe24d07d94388f90654a94f59563668ac1ac5",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:44.956Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 10179,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "以领土扩张为核心的策略游戏，结合经济建设、结盟与进攻争夺地图控制权。",
+            "source_urls": [
+              "https://www.crazygames.com/game/openfront-gsw"
+            ],
+            "basis": "chinese_translation_of_existing_visible_detail_summary",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T15:25:44.330Z"
           }
         },
         {
@@ -333,6 +384,32 @@
             "summary_basis": "own_paraphrase_of_visible_text",
             "release_body_raw": "October 2016",
             "release_conflict": "Header August 2022 differs from body October 2016; unresolved."
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/games/mahjongg-solitaire/cover_16x9-1707829450935.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/cefc3c9991b35eeb7272d1fd5887d2d1b53110081f96406aa98dd7b25127bc88.avif",
+            "sha256": "cefc3c9991b35eeb7272d1fd5887d2d1b53110081f96406aa98dd7b25127bc88",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.071Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 12419,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "限时麻将配对消除游戏，提供提示功能，但没有洗牌功能。",
+            "source_urls": [
+              "https://www.crazygames.com/game/mahjongg-solitaire"
+            ],
+            "basis": "chinese_translation_of_existing_visible_detail_summary",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T15:25:45.215Z"
           }
         },
         {
@@ -432,6 +509,32 @@
             "platforms_raw": "Browser (desktop, mobile, tablet)",
             "gameplay_summary": "Merge food items and manage a cafe while progressing through a family story.",
             "summary_basis": "own_paraphrase_of_visible_text"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/piece-of-cake-merge-and-bake_16x9/20260812042932/piece-of-cake-merge-and-bake_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/76eb5fcef304705148cad19bfcf8d42176a3f9e6c7ecb9929461bec70db8351a.avif",
+            "sha256": "76eb5fcef304705148cad19bfcf8d42176a3f9e6c7ecb9929461bec70db8351a",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.194Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 11748,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "通过合并食物、经营咖啡馆推进家族故事的休闲合成游戏。",
+            "source_urls": [
+              "https://www.crazygames.com/game/piece-of-cake-merge-and-bake"
+            ],
+            "basis": "chinese_translation_of_existing_visible_detail_summary",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T15:25:46.032Z"
           }
         },
         {
@@ -533,6 +636,32 @@
               "May 2023 (WebGL)",
               "September 2023 (Android)"
             ]
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/ragdoll-archers_16x9/20250926080758/ragdoll-archers_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/c2990428a24d350c113801b9ec52a3d7541dab143d331182b14284c4d0f8065a.avif",
+            "sha256": "c2990428a24d350c113801b9ec52a3d7541dab143d331182b14284c4d0f8065a",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.326Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 7499,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "采用物理效果的火柴人射箭游戏，可升级角色、更换箭矢，并进行双人合作或对战。",
+            "source_urls": [
+              "https://www.crazygames.com/game/ragdoll-archers"
+            ],
+            "basis": "chinese_translation_of_existing_visible_detail_summary",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T15:25:47.084Z"
           }
         },
         {
@@ -597,6 +726,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/piles-of-mahjong-jhb_16x9/20250203080756/piles-of-mahjong-jhb_16x9-cover?metadata=none&quality=85&width=675&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/6e28879adcc77ad1bb165af38aac0c2bc354cca6bf31abd36f73413e2dec0c7a.avif",
+            "sha256": "6e28879adcc77ad1bb165af38aac0c2bc354cca6bf31abd36f73413e2dec0c7a",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.460Z",
+            "status": "downloaded",
+            "width": 675,
+            "height": 379,
+            "byte_size": 16317,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "把堆叠麻将牌移入七格暂存区，凑齐三个相同图案消除；暂存区填满而无法消除就会失败。",
+            "source_urls": [
+              "https://www.crazygames.com/game/piles-of-mahjong-jhb"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:02:43.393Z"
           }
         },
         {
@@ -661,6 +816,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/words-of-wonders_16x9/20231019163757/words-of-wonders_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/5f284a177ec02932ce298b2dfec300c4a50135ccf648f48ed58614895b500b88.avif",
+            "sha256": "5f284a177ec02932ce298b2dfec300c4a50135ccf648f48ed58614895b500b88",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.606Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 6714,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "连接字母组成单词并填满填字格，找出所有目标词后进入难度更高的关卡。",
+            "source_urls": [
+              "https://www.crazygames.com/game/words-of-wonders"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:02.974Z"
           }
         },
         {
@@ -725,6 +906,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/screw-out-bolts-and-nuts_16x9/20250711094331/screw-out-bolts-and-nuts_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/5a375c74cdbe86212190ae406fc778212ef874039bd797c62b55b96b9fccd7da.avif",
+            "sha256": "5a375c74cdbe86212190ae406fc778212ef874039bd797c62b55b96b9fccd7da",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.744Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 12147,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "按顺序拆卸彩色螺丝并放入对应颜色的容器，利用有限暂存位让固定板逐步掉落。",
+            "source_urls": [
+              "https://www.crazygames.com/game/screw-out-bolts-and-nuts"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:03.693Z"
           }
         },
         {
@@ -789,6 +996,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/8-ball-pool-billiards-multiplayer_16x9/20260722044342/8-ball-pool-billiards-multiplayer_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/ee6ada5f864e6aecb00c08053f304e9cfaaf148137d1814ee4b8578f3be66418.avif",
+            "sha256": "ee6ada5f864e6aecb00c08053f304e9cfaaf148137d1814ee4b8578f3be66418",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:45.876Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 6928,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "以八球规则瞄准击球、将目标球打入袋中，可与朋友、在线玩家或电脑对手比赛。",
+            "source_urls": [
+              "https://www.crazygames.com/game/8-ball-pool-billiards-multiplayer"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:04.544Z"
           }
         },
         {
@@ -853,6 +1086,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/mage-tower-idle-defense_16x9/20261014091203/mage-tower-idle-defense_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/",
+            "repository_path": "assets/covers/crazygames/f34bdec61d600b796a10a05ec78bad733110b9236f97e3ea9ed28123b32cc00a.avif",
+            "sha256": "f34bdec61d600b796a10a05ec78bad733110b9236f97e3ea9ed28123b32cc00a",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T15:59:46.005Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 19734,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "操控法师守卫高塔，通过解锁法术、强化符文与技能抵御敌人和首领，并获得离线成长。",
+            "source_urls": [
+              "https://www.crazygames.com/game/mage-tower-idle-defense"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:05.183Z"
           }
         }
       ]
@@ -942,6 +1201,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/all-out-nju_16x9/20260827054800/all-out-nju_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/0d6fc99256f27f051bd77629bdbae3af46b8e2dd499f488f5bc5507bc987875e.avif",
+            "sha256": "0d6fc99256f27f051bd77629bdbae3af46b8e2dd499f488f5bc5507bc987875e",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:54.946Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 11958,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "可与朋友共同创建和游玩游戏的多人游戏平台。",
+            "source_urls": [
+              "https://www.crazygames.com/game/all-out-nju"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:05.804Z"
           }
         },
         {
@@ -1006,6 +1291,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/mahjongclassicwebgl.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/d2dca5f65c4a6392f4aeff6383dea61515b733ca16ece973b0763bcfd78b9a47.avif",
+            "sha256": "d2dca5f65c4a6392f4aeff6383dea61515b733ca16ece973b0763bcfd78b9a47",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:55.172Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 168,
+            "byte_size": 13858,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "通过匹配相同图案的麻将牌逐步清空棋盘的经典消除游戏。",
+            "source_urls": [
+              "https://www.crazygames.com/game/mahjong-classic-webgl"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:52.240Z"
           }
         },
         {
@@ -1070,6 +1381,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/games/spider-solitaire-2-suits/thumb-1580242511840.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/8a46a7c1f696f06e0c47dfb09806c5437a88cce4774283c9854c83aebb6df7b6.avif",
+            "sha256": "8a46a7c1f696f06e0c47dfb09806c5437a88cce4774283c9854c83aebb6df7b6",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:55.362Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 168,
+            "byte_size": 10961,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "使用两种花色和两副牌的蜘蛛纸牌游戏，按同花色从 K 到 A 排列以清除牌组，无法移动时可补发牌。",
+            "source_urls": [
+              "https://www.crazygames.com/game/spider-solitaire-2-suits"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:13.216Z"
           }
         },
         {
@@ -1134,6 +1471,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/games/bubble-shooter-classic/cover-1643212218101.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/a527b4b149678ecc5beb783caf5d468013002b00d44fc7bf97b498a61e2f054a.avif",
+            "sha256": "a527b4b149678ecc5beb783caf5d468013002b00d44fc7bf97b498a61e2f054a",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:55.553Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 5974,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "瞄准并发射彩色泡泡，设法清除屏幕上的泡泡。",
+            "source_urls": [
+              "https://www.crazygames.com/game/bubble-shooter-classic"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:13.875Z"
           }
         },
         {
@@ -1198,6 +1561,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/hole-io-uyt_16x9/20260929080322/hole-io-uyt_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/d8cf9a4cd3e65befb5f0c925a0048fdb99f4a7d5185e4c6e26655b3fb77babf2.avif",
+            "sha256": "d8cf9a4cd3e65befb5f0c925a0048fdb99f4a7d5185e4c6e26655b3fb77babf2",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:55.687Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 14860,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "操控黑洞吞下汽车、路灯和建筑等物体，在城市、海盗港湾与科幻都市等场景中不断吞噬。",
+            "source_urls": [
+              "https://www.crazygames.com/game/hole-io-uyt"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:14.533Z"
           }
         },
         {
@@ -1262,6 +1651,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/shred-the-evidence_16x9/20261019015001/shred-the-evidence_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/c1d029c29917e4b98d00584aaab04bce04d11f7945b1592cbbd137e5dfcc686d.avif",
+            "sha256": "c1d029c29917e4b98d00584aaab04bce04d11f7945b1592cbbd137e5dfcc686d",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:55.851Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 6811,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "把文件拖入办公室碎纸机销毁，控制送纸速度和电机温度，在提高收益与避免过热停机之间取舍。",
+            "source_urls": [
+              "https://www.crazygames.com/game/shred-the-evidence"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:15.308Z"
           }
         },
         {
@@ -1326,6 +1741,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/lucky-brainrot-blocks-online-ehx_16x9/20260423045240/lucky-brainrot-blocks-online-ehx_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/d5c79c3024fa720d1c8e3b32d27a2fe087784c08d1dc4bc718e889e00140dbc5.avif",
+            "sha256": "d5c79c3024fa720d1c8e3b32d27a2fe087784c08d1dc4bc718e889e00140dbc5",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:56.011Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 8563,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "多人收集经营游戏：打开幸运方块获得迷因角色，将角色放入基地赚取收益，再升级收藏和扩建基地。",
+            "source_urls": [
+              "https://www.crazygames.com/game/lucky-brainrot-blocks-online-ehx"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:25.455Z"
           }
         },
         {
@@ -1390,6 +1831,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/bridge-race_16x9/20241227062023/bridge-race_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/abe83fa0faef544136c7a23e35924d3a4fdfe343433a3ed0a07f4c80afdabfc8.avif",
+            "sha256": "abe83fa0faef544136c7a23e35924d3a4fdfe343433a3ed0a07f4c80afdabfc8",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:56.153Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 11747,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "收集与角色同色的方块搭建桥梁，与对手争夺路线并抢先抵达终点。",
+            "source_urls": [
+              "https://www.crazygames.com/game/bridge-race"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:26.334Z"
           }
         },
         {
@@ -1454,6 +1921,32 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/coral-isle-2-tropical-stories_16x9/20260901070939/coral-isle-2-tropical-stories_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/e7962855e089e7e74ff76aaeced7a538b1cbac30e173da5241268b3aa08b9fbb.avif",
+            "sha256": "e7962855e089e7e74ff76aaeced7a538b1cbac30e173da5241268b3aa08b9fbb",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:56.368Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 14132,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "以空难幸存者为背景的热带岛屿经营游戏，通过耕种、采集、生产和建设聚落探索岛屿与故事。",
+            "source_urls": [
+              "https://www.crazygames.com/game/coral-isle-2-tropical-stories"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:27.008Z"
           }
         },
         {
@@ -1518,9 +2011,48 @@
           ],
           "source_extensions": {
             "detail_page_status": "not_collected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/kitty-cat-burger-restaurant_16x9/20260922090112/kitty-cat-burger-restaurant_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "repository_path": "assets/covers/crazygames/74fd2765cc530231a2ca30ecbb807fda799cb4a8a9e045566961c86332162f67.avif",
+            "sha256": "74fd2765cc530231a2ca30ecbb807fda799cb4a8a9e045566961c86332162f67",
+            "mime_type": "image/avif",
+            "fetched_at_utc": "2026-10-23T16:00:56.495Z",
+            "status": "downloaded",
+            "width": 273,
+            "height": 153,
+            "byte_size": 12080,
+            "retrieval_method": "cloud_browser_rendered_img_downloadMedia",
+            "validation": "magic_signature_and_full_image_decode"
+          },
+          "description": {
+            "text": "与猫咪员工经营汉堡店，从小店起步，扩充生产线、升级设备并制作汉堡吸引顾客。",
+            "source_urls": [
+              "https://www.crazygames.com/game/kitty-cat-burger-restaurant"
+            ],
+            "basis": "own_chinese_summary_of_rendered_detail_text",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-23T16:04:29Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-23T16:03:28.026Z"
           }
         }
       ]
     }
-  ]
+  ],
+  "enrichment": {
+    "completed_at_utc": "2026-10-23T16:06:15.777436Z",
+    "scope": "cover_images_and_short_chinese_descriptions",
+    "original_collection_completed_at_utc": "2026-10-23T15:26:14Z",
+    "metrics_refreshed": false,
+    "note": "Additive enrichment performed after the original metric snapshot. Original metric values, source observations, selection and collection times are unchanged; cover and description timestamps identify their independent observations."
+  },
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  }
 }
