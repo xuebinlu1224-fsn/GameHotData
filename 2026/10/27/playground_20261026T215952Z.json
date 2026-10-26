@@ -1,0 +1,2341 @@
+{
+  "schema_version": "2.1.0",
+  "document_kind": "scheduled_public_ui_snapshot",
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  },
+  "batches": [
+    {
+      "batch_id": "playground-trending-20261026T215952Z",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "rendered_DOM_read_in_assistant_cloud_browser",
+        "access_context": "logged_in_existing_google_session_user_authorized",
+        "ui_language_observed": "Chinese UI with English game titles and genres",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-27"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-26T21:58:02.847Z",
+        "end": "2026-10-26T21:59:46.032Z"
+      },
+      "scope": {
+        "surface": "homepage_trending_carousel",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "First 10 game cards in selected section DOM order, excluding create promotion. First five unique games inspected for detail metadata, no gameplay.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 10,
+        "detail_pages_inspected": 5,
+        "source_extensions": {
+          "section_key": "trending",
+          "section_definition_raw": "过去 24 小时内玩家数量增幅最大"
+        }
+      },
+      "limitations": [
+        "Not a complete catalog, official rank, representative sample or independently measured heat score.",
+        "Plays and likes have no observed accumulation period; do not assume 24-hour or lifetime totals.",
+        "Abbreviated counts are approximate; missing values are not zero.",
+        "Current authenticated access was verified after settling; future login persistence is not guaranteed.",
+        "Browser compatibility warning remained but discovery metadata was readable.",
+        "Only general discovery cards collected; no account identity, history, profile links, email, secrets, personal recommendations or credentials stored.",
+        "Same games may occur in both batches; deduplicate by identity_key only for entity counts, not section observations.",
+        "Detail-page counts are separate observations of the same metric and must not be added to discovery-card counts.",
+        "First five unique detail pages displayed a browser-compatibility game-loading warning, but game metadata and counters remained readable. No play button was clicked.",
+        "Current cover URLs changed and supported cloud-browser media downloads did not return files; affected cover fields remain null. Previously stored images were not relabeled as newly verified matches.",
+        "Current cover URLs changed and supported cloud-browser media downloads did not return files; affected cover fields remain null. Previously stored images were not relabeled as newly verified matches."
+      ],
+      "records": [
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1074005397800118085",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1074005397800118085",
+            "platform_id": "1074005397800118085",
+            "published_at_utc": null,
+            "title_raw": "CATacombs",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1074005397800118085",
+              "game_id": "1074005397800118085",
+              "label_raw": "CATacombs",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 1,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 14400,
+              "unit": "plays",
+              "raw_value": "14.4K",
+              "raw_text": "14.4K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 192,
+              "unit": "likes",
+              "raw_value": "192",
+              "raw_text": "192 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 14400,
+              "unit": "plays",
+              "raw_value": "14.4K",
+              "raw_text": "14.4K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/1074005397800118085?ref=trending_games&pos=0",
+              "observed_at_utc": "2026-10-26T21:59:42.813Z"
+            }
+          ],
+          "description": {
+            "text": "在地牢中对抗怪物，用零食把走失的猫咪引回猫爬架。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1074005397800118085?ref=trending_games&pos=0"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "RPG",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/1074005397800118085?ref=trending_games&pos=0",
+            "detail_source_url": "https://playground.google/game/1074005397800118085?ref=trending_games&pos=0",
+            "detail_observed_at_utc": "2026-10-26T21:59:42.813Z",
+            "game_loading_warning_raw": "无法加载游戏。您的浏览器缺少运行此功能所需的必备组件。请更新或改用受支持的现代浏览器。"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMElIiZNKfLyNTeWC0z3JwjIvcr6LqJmBCQGophxhUA6IZJwVj9TS_3SQOytN7CCeOwW2VhRn1lFi73xLoHM1e7Y0pDYniiuAZ1kin0jNucK46cymh08rPOFhW3ObPO5mMyHH2utI4JhQg_MAKxUQn1OhuT18R0NEoyoLXGZP6840TMrV9D1jRVNCR23V-f60_L2eNCQmiFjWwAakTBbpyWorK2PArixYTZcgutG=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:08.472Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/4373179198243961322",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:4373179198243961322",
+            "platform_id": "4373179198243961322",
+            "published_at_utc": null,
+            "title_raw": "Coastal Cruiser",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/4373179198243961322",
+              "game_id": "4373179198243961322",
+              "label_raw": "Coastal Cruiser",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 2,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 12300,
+              "unit": "plays",
+              "raw_value": "12.3K",
+              "raw_text": "12.3K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 172,
+              "unit": "likes",
+              "raw_value": "172",
+              "raw_text": "172 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 12400,
+              "unit": "plays",
+              "raw_value": "12.4K",
+              "raw_text": "12.4K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/4373179198243961322?ref=trending_games&pos=1",
+              "observed_at_utc": "2026-10-26T21:59:43.580Z"
+            }
+          ],
+          "description": {
+            "text": "驾驶敞篷车沿海岸公路前进，躲避车辆和障碍并收集金币。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/4373179198243961322?ref=trending_games&pos=1"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Kart racing",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/4373179198243961322?ref=trending_games&pos=1",
+            "detail_source_url": "https://playground.google/game/4373179198243961322?ref=trending_games&pos=1",
+            "detail_observed_at_utc": "2026-10-26T21:59:43.580Z",
+            "game_loading_warning_raw": "无法加载游戏。您的浏览器缺少运行此功能所需的必备组件。请更新或改用受支持的现代浏览器。"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMEFHuURUqcSBChgmLql4N_PZxOdQObZrM62NyhM5LyrbYEEc_VacWt6bIA47guh2DYfrt8pVO99mk4pod1Tc-fKrf9RaAinoPSd3INvlVuD6km9M7LQPsAzBb_YuP_KTvKB75h7rIFselClZvsE1wvDLsyAo-Wj6sFBmVUhHhZvdLRUGQqbO-PpI9sq1HV03Z5sVOTPL2IXFBQI89732aqGiFpq0hqJy78-CQ=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:13.549Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/3482930674592561450",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:3482930674592561450",
+            "platform_id": "3482930674592561450",
+            "published_at_utc": null,
+            "title_raw": "Midnight Pursuit",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/3482930674592561450",
+              "game_id": "3482930674592561450",
+              "label_raw": "Midnight Pursuit",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 3,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 11500,
+              "unit": "plays",
+              "raw_value": "11.5K",
+              "raw_text": "11.5K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 75,
+              "unit": "likes",
+              "raw_value": "75",
+              "raw_text": "75 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 11500,
+              "unit": "plays",
+              "raw_value": "11.5K",
+              "raw_text": "11.5K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/3482930674592561450?ref=trending_games&pos=2",
+              "observed_at_utc": "2026-10-26T21:59:44.345Z"
+            }
+          ],
+          "description": {
+            "text": "在雨夜街道漂移竞速，逃脱警车追逐并挑战对手。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/3482930674592561450?ref=trending_games&pos=2"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Kart racing",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/3482930674592561450?ref=trending_games&pos=2",
+            "detail_source_url": "https://playground.google/game/3482930674592561450?ref=trending_games&pos=2",
+            "detail_observed_at_utc": "2026-10-26T21:59:44.345Z",
+            "game_loading_warning_raw": null
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMFdadlrwAZrMeenVySS6YxWOXhPeKv6611Bat6iXUamo01xQ4lgTEHqr2N-N9UIw9cKonwoyVXqWiqBD7PqYS0MgwVUaVqAFDBZwkLZ__xFYhETRFoMZeNPO3666bOPYaAe-hPRTyOW6aa87ARtN6bS78EO2jbw_5LWzOhXkEqIUHS6BoFfwb9vRv5DInmh5MCh2XkgJQuEUadjH3KK0mf8-wYd6bZ50yEjyFo=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:18.591Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1521587251058648535",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1521587251058648535",
+            "platform_id": "1521587251058648535",
+            "published_at_utc": null,
+            "title_raw": "Grumpy Knight",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1521587251058648535",
+              "game_id": "1521587251058648535",
+              "label_raw": "Grumpy Knight",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 4,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 8000,
+              "unit": "plays",
+              "raw_value": "8K",
+              "raw_text": "8K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 56,
+              "unit": "likes",
+              "raw_value": "56",
+              "raw_text": "56 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 8000,
+              "unit": "plays",
+              "raw_value": "8K",
+              "raw_text": "8K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/1521587251058648535?ref=trending_games&pos=3",
+              "observed_at_utc": "2026-10-26T21:59:45.221Z"
+            }
+          ],
+          "description": {
+            "text": "深入多层地牢，击败成群怪物与地牢首领。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1521587251058648535?ref=trending_games&pos=3"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Action & adventure",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/1521587251058648535?ref=trending_games&pos=3",
+            "detail_source_url": "https://playground.google/game/1521587251058648535?ref=trending_games&pos=3",
+            "detail_observed_at_utc": "2026-10-26T21:59:45.221Z",
+            "game_loading_warning_raw": null
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthME3kBuZShhzYFhx_P6Ol4B63xVnsMr4WCl5AsODDtaVix7AY0al0i3RAycetwU6fq868qS52qWCJsEAKnQVvZ-SUPt2V8ipR1AM4jqxarbB1eZZ6l22B4SncS_qSrscp1vFVm8ZMvPaR9EZa4lS6RFS7ei0G2BD_XM8Ty2RwJg91VkltDBi7YBTkctPGSCexHmUrjfJV3WmhS6iPKQrCGQgi311WhIN4I3VD2fM=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:23.650Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1512903382326067257",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1512903382326067257",
+            "platform_id": "1512903382326067257",
+            "published_at_utc": null,
+            "title_raw": "Westbound Frontier",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1512903382326067257",
+              "game_id": "1512903382326067257",
+              "label_raw": "Westbound Frontier",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 5,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 7100,
+              "unit": "plays",
+              "raw_value": "7.1K",
+              "raw_text": "7.1K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 97,
+              "unit": "likes",
+              "raw_value": "97",
+              "raw_text": "97 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 7100,
+              "unit": "plays",
+              "raw_value": "7.1K",
+              "raw_text": "7.1K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/1512903382326067257?ref=trending_games&pos=4",
+              "observed_at_utc": "2026-10-26T21:59:46.032Z"
+            }
+          ],
+          "description": {
+            "text": "在峡谷环境中建造和管理西部小镇，发展马厩与居民设施。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1512903382326067257?ref=trending_games&pos=4"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Casual",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/1512903382326067257?ref=trending_games&pos=4",
+            "detail_source_url": "https://playground.google/game/1512903382326067257?ref=trending_games&pos=4",
+            "detail_observed_at_utc": "2026-10-26T21:59:46.032Z",
+            "game_loading_warning_raw": null
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMGV4JMpjVaDUwzG_v7II3TqcaZtqA6_UxOIN7Ce2URDqBSFDI8fE3mXztQY-adA8ltx3K2_Io9dnYbiJm4PRrobYt-WUSoU1JKVzXfzx1dZ6nNABgpDqr5gZ8TphSFOaRQmNhe5c0rNgkR9T94JB7l6acIN019F7OfHC4RTVRKtFUixQIGwARFEE9rP-XE8dF72Rr_59IM5ZHQGujfF_jNi4lfjsPMGkRfoozQA=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:28.692Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/6997445763460708092",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:6997445763460708092",
+            "platform_id": "6997445763460708092",
+            "published_at_utc": null,
+            "title_raw": "Volcano Run - Blaster Pack",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/6997445763460708092",
+              "game_id": "6997445763460708092",
+              "label_raw": "Volcano Run - Blaster Pack",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 6,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 5200,
+              "unit": "plays",
+              "raw_value": "5.2K",
+              "raw_text": "5.2K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 112,
+              "unit": "likes",
+              "raw_value": "112",
+              "raw_text": "112 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "驾驶霓虹摩托穿越线框火山公路，使用新增的爆破武器。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/6997445763460708092?ref=trending_games&pos=5"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Arcade shooter",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/6997445763460708092?ref=trending_games&pos=5"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthME1glqbbqqGUrzW6HN9xAAHHVhOso5xFlzBzkiTNXqgV9vIBf2NoggrW3zA55K99k0oycpW6CNmbp83UOr5PwIJVr29_dNRd9Kqb4sqBw5yEKoL6-uC0KnBXqGqeLAwH-_vNWuu9_hPhDwX_Zoso910TLjvG9ZE6gMQ9z4XlvpNufcgN5i0DM0M5OMyeiGF0bNXh0ZdKv9zS-Lm1SZBBIkImz4e26Z0jN21U3a5=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:40.913Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/8566014825859277124",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:8566014825859277124",
+            "platform_id": "8566014825859277124",
+            "published_at_utc": null,
+            "title_raw": "Oregon Quest 3D",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/8566014825859277124",
+              "game_id": "8566014825859277124",
+              "label_raw": "Oregon Quest 3D",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 7,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 3900,
+              "unit": "plays",
+              "raw_value": "3.9K",
+              "raw_text": "3.9K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 59,
+              "unit": "likes",
+              "raw_value": "59",
+              "raw_text": "59 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "带领五名拓荒者乘篷车远行，管理食物、健康与维修以抵达前哨。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/8566014825859277124?ref=trending_games&pos=6"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Action & adventure",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/8566014825859277124?ref=trending_games&pos=6"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMHzgmQP2eypqV3-sZTdjgVBF8xEJ8vhEQ2z46kloOG7VAHF4ofeJ_08AEf8LIPHsPCkdiBqUd1lZ4XJdeZ6l6lrKxd1xO5v0x-Dx35QcLGXQ01mDdmQzBuhxMILFFThrXrXLBfI1iIgOlKDHDPTREJbXa_2IQ040lBiS12RADoopudmVLk7OXlnaEYKbAn9TalRFec6AvJ1KhFLatYJ6h8HEYq26yggqvuFJZOc=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:45.999Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/422955247860057623",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:422955247860057623",
+            "platform_id": "422955247860057623",
+            "published_at_utc": null,
+            "title_raw": "Slingshot Holidays",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/422955247860057623",
+              "game_id": "422955247860057623",
+              "label_raw": "Slingshot Holidays",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 8,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 4500,
+              "unit": "plays",
+              "raw_value": "4.5K",
+              "raw_text": "4.5K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 121,
+              "unit": "likes",
+              "raw_value": "121",
+              "raw_text": "121 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "移动恒星和行星，引导复古火箭从发射台安全抵达空间站。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/422955247860057623?ref=trending_games&pos=7"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Puzzle",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/422955247860057623?ref=trending_games&pos=7"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMGc-Ao23EArluKLuDFh32THgtjcnnR0iKJEY6ma_hjtk6kFl1kujfXsfmCK72wG_J0upVSLVuYk3V9SCUaC4I0A8HkHcGeBpJx8f5v8PO7KeVFanUcPWu7GlrcsqfeDHD6o8VeUeEAoTcP5dbNBymT2wgxTKXK1M_Cz-DqDrFeFAilUnYMOi3PRHcq9ZcX4_38YbNsWWjusTMv_IKEJPjgYMIqD9T1Fpn1VRZI=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:51.122Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/6928777653998135990",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:6928777653998135990",
+            "platform_id": "6928777653998135990",
+            "published_at_utc": null,
+            "title_raw": "Temporal Paradox",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/6928777653998135990",
+              "game_id": "6928777653998135990",
+              "label_raw": "Temporal Paradox",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 9,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 4500,
+              "unit": "plays",
+              "raw_value": "4.5K",
+              "raw_text": "4.5K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 60,
+              "unit": "likes",
+              "raw_value": "60",
+              "raw_text": "60 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "记录行动并倒转时间，让全息分身同步配合穿越安防区域。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/6928777653998135990?ref=trending_games&pos=8"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Action & adventure",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/6928777653998135990?ref=trending_games&pos=8"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMF5AiU53wtPeDd5DqxGSO8NWypq2mmvDImws0ts1v97b22L5PB0XUfWAXXoLRtH1nvn7D5Gp1MNOeZdyeEW_qemqf9eGra0Yy9zyi3U5n0EsBS9YQqT6_IM15QUQfJoBcYVxsyfCOpakJPceOIvY7oJpZYL0zTrldO53Q_iSHo_pS-cgLlfAdP3zhPPY_CV_YWy2g_fIPVTCQl7WPNbpJOTV9epPnJlacGgNm1I=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:56.229Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1755214083070099027",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1755214083070099027",
+            "platform_id": "1755214083070099027",
+            "published_at_utc": null,
+            "title_raw": "Dam it!",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1755214083070099027",
+              "game_id": "1755214083070099027",
+              "label_raw": "Dam it!",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏",
+            "section_definition_raw": "过去 24 小时内玩家数量增幅最大",
+            "region_label_raw": null,
+            "display_position": 10,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": "过去 24 小时内玩家数量增幅最大",
+            "personalization_status": "unknown",
+            "note": "The trending section describes player-count growth over 24 hours but supplies no growth quantities. The separate plays and likes counts must not be interpreted as growth."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 3500,
+              "unit": "plays",
+              "raw_value": "3.5K",
+              "raw_text": "3.5K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 122,
+              "unit": "likes",
+              "raw_value": "122",
+              "raw_text": "122 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "塑造地形扩大水库，建造河狸水坝并挑战各关最大蓄水量。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1755214083070099027?ref=trending_games&pos=9"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Casual",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "trending_games",
+            "section_card_url": "https://playground.google/game/1755214083070099027?ref=trending_games&pos=9"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMHo4EAF8u2WL5ph7fFPhsh6s_lOmaftvhRma_v5v9g0YqSUlA0YpsjMsuI5_0dUIknTDxjINDyC3hcD_DPfBBiOqGz113b_B3e7qbo3TO7KHUmYCKB7WLJBT8dq9f_aevGG74a7wFw07G2y6gv65uOuGtwLu7HEv2FWKFFSerUfKxIZ6p9nr59d71nkiAxv81GSu_5sTbqrYGzUDNvjrBcPDOo33OsCG19Kf8Fg=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:59:01.344Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        }
+      ]
+    },
+    {
+      "batch_id": "playground-popular_played-20261026T215952Z",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "rendered_DOM_read_in_assistant_cloud_browser",
+        "access_context": "logged_in_existing_google_session_user_authorized",
+        "ui_language_observed": "Chinese UI with English game titles and genres",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-27"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-26T21:58:02.847Z",
+        "end": "2026-10-26T21:59:46.032Z"
+      },
+      "scope": {
+        "surface": "homepage_popular_played_carousel",
+        "query": null,
+        "sort": "最热门游戏",
+        "sampling_rule": "First 10 game cards in selected section DOM order, excluding create promotion. First five unique games inspected for detail metadata, no gameplay.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 10,
+        "detail_pages_inspected": 0,
+        "source_extensions": {
+          "section_key": "popular_played",
+          "section_definition_raw": null
+        }
+      },
+      "limitations": [
+        "Not a complete catalog, official rank, representative sample or independently measured heat score.",
+        "Plays and likes have no observed accumulation period; do not assume 24-hour or lifetime totals.",
+        "Abbreviated counts are approximate; missing values are not zero.",
+        "Current authenticated access was verified after settling; future login persistence is not guaranteed.",
+        "Browser compatibility warning remained but discovery metadata was readable.",
+        "Only general discovery cards collected; no account identity, history, profile links, email, secrets, personal recommendations or credentials stored.",
+        "Same games may occur in both batches; deduplicate by identity_key only for entity counts, not section observations.",
+        "Detail-page counts are separate observations of the same metric and must not be added to discovery-card counts.",
+        "First five unique detail pages displayed a browser-compatibility game-loading warning, but game metadata and counters remained readable. No play button was clicked.",
+        "Current cover URLs changed and supported cloud-browser media downloads did not return files; affected cover fields remain null. Previously stored images were not relabeled as newly verified matches.",
+        "Current cover URLs changed and supported cloud-browser media downloads did not return files; affected cover fields remain null. Previously stored images were not relabeled as newly verified matches."
+      ],
+      "records": [
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/3482930674592561450",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:3482930674592561450",
+            "platform_id": "3482930674592561450",
+            "published_at_utc": null,
+            "title_raw": "Midnight Pursuit",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/3482930674592561450",
+              "game_id": "3482930674592561450",
+              "label_raw": "Midnight Pursuit",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 1,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 11500,
+              "unit": "plays",
+              "raw_value": "11.5K",
+              "raw_text": "11.5K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 75,
+              "unit": "likes",
+              "raw_value": "75",
+              "raw_text": "75 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 11500,
+              "unit": "plays",
+              "raw_value": "11.5K",
+              "raw_text": "11.5K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/3482930674592561450?ref=trending_games&pos=2",
+              "observed_at_utc": "2026-10-26T21:59:44.345Z"
+            }
+          ],
+          "description": {
+            "text": "在雨夜街道漂移竞速，逃脱警车追逐并挑战对手。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/3482930674592561450?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Kart racing",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/3482930674592561450?ref=popular_games",
+            "detail_source_url": "https://playground.google/game/3482930674592561450?ref=trending_games&pos=2",
+            "detail_observed_at_utc": "2026-10-26T21:59:44.345Z",
+            "game_loading_warning_raw": null
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMFdadlrwAZrMeenVySS6YxWOXhPeKv6611Bat6iXUamo01xQ4lgTEHqr2N-N9UIw9cKonwoyVXqWiqBD7PqYS0MgwVUaVqAFDBZwkLZ__xFYhETRFoMZeNPO3666bOPYaAe-hPRTyOW6aa87ARtN6bS78EO2jbw_5LWzOhXkEqIUHS6BoFfwb9vRv5DInmh5MCh2XkgJQuEUadjH3KK0mf8-wYd6bZ50yEjyFo=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:18.591Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1074005397800118085",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1074005397800118085",
+            "platform_id": "1074005397800118085",
+            "published_at_utc": null,
+            "title_raw": "CATacombs",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1074005397800118085",
+              "game_id": "1074005397800118085",
+              "label_raw": "CATacombs",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 2,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 14400,
+              "unit": "plays",
+              "raw_value": "14.4K",
+              "raw_text": "14.4K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 192,
+              "unit": "likes",
+              "raw_value": "192",
+              "raw_text": "192 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 14400,
+              "unit": "plays",
+              "raw_value": "14.4K",
+              "raw_text": "14.4K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/1074005397800118085?ref=trending_games&pos=0",
+              "observed_at_utc": "2026-10-26T21:59:42.813Z"
+            }
+          ],
+          "description": {
+            "text": "在地牢中对抗怪物，用零食把走失的猫咪引回猫爬架。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1074005397800118085?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "RPG",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/1074005397800118085?ref=popular_games",
+            "detail_source_url": "https://playground.google/game/1074005397800118085?ref=trending_games&pos=0",
+            "detail_observed_at_utc": "2026-10-26T21:59:42.813Z",
+            "game_loading_warning_raw": "无法加载游戏。您的浏览器缺少运行此功能所需的必备组件。请更新或改用受支持的现代浏览器。"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMElIiZNKfLyNTeWC0z3JwjIvcr6LqJmBCQGophxhUA6IZJwVj9TS_3SQOytN7CCeOwW2VhRn1lFi73xLoHM1e7Y0pDYniiuAZ1kin0jNucK46cymh08rPOFhW3ObPO5mMyHH2utI4JhQg_MAKxUQn1OhuT18R0NEoyoLXGZP6840TMrV9D1jRVNCR23V-f60_L2eNCQmiFjWwAakTBbpyWorK2PArixYTZcgutG=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:08.472Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/4373179198243961322",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:4373179198243961322",
+            "platform_id": "4373179198243961322",
+            "published_at_utc": null,
+            "title_raw": "Coastal Cruiser",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/4373179198243961322",
+              "game_id": "4373179198243961322",
+              "label_raw": "Coastal Cruiser",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 3,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 12400,
+              "unit": "plays",
+              "raw_value": "12.4K",
+              "raw_text": "12.4K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 172,
+              "unit": "likes",
+              "raw_value": "172",
+              "raw_text": "172 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 12400,
+              "unit": "plays",
+              "raw_value": "12.4K",
+              "raw_text": "12.4K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/4373179198243961322?ref=trending_games&pos=1",
+              "observed_at_utc": "2026-10-26T21:59:43.580Z"
+            }
+          ],
+          "description": {
+            "text": "驾驶敞篷车沿海岸公路前进，躲避车辆和障碍并收集金币。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/4373179198243961322?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Kart racing",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/4373179198243961322?ref=popular_games",
+            "detail_source_url": "https://playground.google/game/4373179198243961322?ref=trending_games&pos=1",
+            "detail_observed_at_utc": "2026-10-26T21:59:43.580Z",
+            "game_loading_warning_raw": "无法加载游戏。您的浏览器缺少运行此功能所需的必备组件。请更新或改用受支持的现代浏览器。"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMEFHuURUqcSBChgmLql4N_PZxOdQObZrM62NyhM5LyrbYEEc_VacWt6bIA47guh2DYfrt8pVO99mk4pod1Tc-fKrf9RaAinoPSd3INvlVuD6km9M7LQPsAzBb_YuP_KTvKB75h7rIFselClZvsE1wvDLsyAo-Wj6sFBmVUhHhZvdLRUGQqbO-PpI9sq1HV03Z5sVOTPL2IXFBQI89732aqGiFpq0hqJy78-CQ=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:13.549Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/7738094230751014654",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:7738094230751014654",
+            "platform_id": "7738094230751014654",
+            "published_at_utc": null,
+            "title_raw": "Aztec Mudrace EXTREME",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/7738094230751014654",
+              "game_id": "7738094230751014654",
+              "label_raw": "Aztec Mudrace EXTREME",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 4,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 897,
+              "unit": "plays",
+              "raw_value": "897",
+              "raw_text": "897 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 24,
+              "unit": "likes",
+              "raw_value": "24",
+              "raw_text": "24 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "驾驶卡丁车在古代遗迹中参加十六车混战，撞击对手争取高分。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/7738094230751014654?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Kart racing",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/7738094230751014654?ref=popular_games"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMFmDH1Wn--gTOEdCgQO8gX4FcJxubbiMmki1fPteIYextrGHiRE6IzpNCRH9uPfaY90dfnPhjIIK6Cyx_poz0M2i_aSxilj3mv1dteWYMbezG295lLcPaCExEZh1MT2MCVgLmr-lGuDguNLD8p3BPIWUnxZY1V0VPTRSxS-zxV3zrUU8JTGpgLh2tt2bY1DJ_L3U6_WQVw1e3GjiV165GSNVPWvS4lydOra1Udo=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:59:06.466Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1512903382326067257",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1512903382326067257",
+            "platform_id": "1512903382326067257",
+            "published_at_utc": null,
+            "title_raw": "Westbound Frontier",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1512903382326067257",
+              "game_id": "1512903382326067257",
+              "label_raw": "Westbound Frontier",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 5,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 7100,
+              "unit": "plays",
+              "raw_value": "7.1K",
+              "raw_text": "7.1K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 97,
+              "unit": "likes",
+              "raw_value": "97",
+              "raw_text": "97 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 7100,
+              "unit": "plays",
+              "raw_value": "7.1K",
+              "raw_text": "7.1K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/1512903382326067257?ref=trending_games&pos=4",
+              "observed_at_utc": "2026-10-26T21:59:46.032Z"
+            }
+          ],
+          "description": {
+            "text": "在峡谷环境中建造和管理西部小镇，发展马厩与居民设施。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1512903382326067257?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Casual",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/1512903382326067257?ref=popular_games",
+            "detail_source_url": "https://playground.google/game/1512903382326067257?ref=trending_games&pos=4",
+            "detail_observed_at_utc": "2026-10-26T21:59:46.032Z",
+            "game_loading_warning_raw": null
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMGV4JMpjVaDUwzG_v7II3TqcaZtqA6_UxOIN7Ce2URDqBSFDI8fE3mXztQY-adA8ltx3K2_Io9dnYbiJm4PRrobYt-WUSoU1JKVzXfzx1dZ6nNABgpDqr5gZ8TphSFOaRQmNhe5c0rNgkR9T94JB7l6acIN019F7OfHC4RTVRKtFUixQIGwARFEE9rP-XE8dF72Rr_59IM5ZHQGujfF_jNi4lfjsPMGkRfoozQA=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:28.692Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/1521587251058648535",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:1521587251058648535",
+            "platform_id": "1521587251058648535",
+            "published_at_utc": null,
+            "title_raw": "Grumpy Knight",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/1521587251058648535",
+              "game_id": "1521587251058648535",
+              "label_raw": "Grumpy Knight",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 6,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 8000,
+              "unit": "plays",
+              "raw_value": "8K",
+              "raw_text": "8K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 56,
+              "unit": "likes",
+              "raw_value": "56",
+              "raw_text": "56 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.detail_plays",
+              "value": 8000,
+              "unit": "plays",
+              "raw_value": "8K",
+              "raw_text": "8K 次游玩",
+              "semantics": "Displayed plays on inspected game detail, separate from homepage plays. Accumulation window unspecified; not unique users or 24-hour growth.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/game/1521587251058648535?ref=trending_games&pos=3",
+              "observed_at_utc": "2026-10-26T21:59:45.221Z"
+            }
+          ],
+          "description": {
+            "text": "深入多层地牢，击败成群怪物与地牢首领。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/1521587251058648535?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "inspected_metadata_only",
+            "genre_raw": "Action & adventure",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/1521587251058648535?ref=popular_games",
+            "detail_source_url": "https://playground.google/game/1521587251058648535?ref=trending_games&pos=3",
+            "detail_observed_at_utc": "2026-10-26T21:59:45.221Z",
+            "game_loading_warning_raw": null
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthME3kBuZShhzYFhx_P6Ol4B63xVnsMr4WCl5AsODDtaVix7AY0al0i3RAycetwU6fq868qS52qWCJsEAKnQVvZ-SUPt2V8ipR1AM4jqxarbB1eZZ6l22B4SncS_qSrscp1vFVm8ZMvPaR9EZa4lS6RFS7ei0G2BD_XM8Ty2RwJg91VkltDBi7YBTkctPGSCexHmUrjfJV3WmhS6iPKQrCGQgi311WhIN4I3VD2fM=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:23.650Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/2789896797548391002",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:2789896797548391002",
+            "platform_id": "2789896797548391002",
+            "published_at_utc": null,
+            "title_raw": "Orbital Architect",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/2789896797548391002",
+              "game_id": "2789896797548391002",
+              "label_raw": "Orbital Architect",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 7,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 784,
+              "unit": "plays",
+              "raw_value": "784",
+              "raw_text": "784 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 17,
+              "unit": "likes",
+              "raw_value": "17",
+              "raw_text": "17 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "在零重力轨道环境中拼装模块化空间站，平衡生命维持、重力与电力系统。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/2789896797548391002?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Puzzle",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/2789896797548391002?ref=popular_games"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMGAN8lDaJa90CE3AL4iK941lYtDNcfhFWsqU0MQKLXGGioCnsWNNvmcwVqv2moYCBMBK5oN2DBnnf27CejL9E7hQF_WkV173h9PiiImoH3XUcunYEgfrOCvilsn9SX4RbuUpBX1vf1hmx6HPtINchUDtKZJD9S2ozXt11zldLuBCDc66t57aqJrLI-_fYoJGJwp6EG5wHmS3y0a5atJVv7JrUGqzt3gGuXcdflT=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:59:11.594Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/2610845329431101317",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:2610845329431101317",
+            "platform_id": "2610845329431101317",
+            "published_at_utc": null,
+            "title_raw": "Angry Beavers",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/2610845329431101317",
+              "game_id": "2610845329431101317",
+              "label_raw": "Angry Beavers",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 8,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 528,
+              "unit": "plays",
+              "raw_value": "528",
+              "raw_text": "528 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 20,
+              "unit": "likes",
+              "raw_value": "20",
+              "raw_text": "20 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "用滚木和啃咬抵御敌人保护森林，必要时调用一次巨木清场。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/2610845329431101317?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Arcade shooter",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/2610845329431101317?ref=popular_games"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMERplNI6Yg1vvrF9QhZYVI72Lu1AGrQxbA1zbFsL_agP53I6dDN1v0fCpd2QlGbx7PDXpnbdOF43_rw477TsW-ZxXUGRy3V4N-0Ig6iV5Y-BcTluyBoI6z7e1QcAeyDlgBsHjDD0G6mVmLG9dhJaBwARR7Kf05vJ5yxiDgLmktndo1P55T5XhySoKzNsHgv01NXD5lOFj2T5HzTqiDZoY5ME4flrzUlF01Yskg=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:59:16.736Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/8566014825859277124",
+            "identity_basis": "observed_game_id_in_url",
+            "identity_key": "playground:game:8566014825859277124",
+            "platform_id": "8566014825859277124",
+            "published_at_utc": null,
+            "title_raw": "Oregon Quest 3D",
+            "type": "game"
+          },
+          "game_associations": [
+            {
+              "basis": "site_game_discovery_card",
+              "evidence": "https://playground.google/game/8566014825859277124",
+              "game_id": "8566014825859277124",
+              "label_raw": "Oregon Quest 3D",
+              "verification": "platform_identity_only_not_externally_resolved"
+            }
+          ],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 9,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 3900,
+              "unit": "plays",
+              "raw_value": "3.9K",
+              "raw_text": "3.9K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 59,
+              "unit": "likes",
+              "raw_value": "59",
+              "raw_text": "59 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "带领五名拓荒者乘篷车远行，管理食物、健康与维修以抵达前哨。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/8566014825859277124?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Action & adventure",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/8566014825859277124?ref=popular_games"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMHzgmQP2eypqV3-sZTdjgVBF8xEJ8vhEQ2z46kloOG7VAHF4ofeJ_08AEf8LIPHsPCkdiBqUd1lZ4XJdeZ6l6lrKxd1xO5v0x-Dx35QcLGXQ01mDdmQzBuhxMILFFThrXrXLBfI1iIgOlKDHDPTREJbXa_2IQ040lBiS12RADoopudmVLk7OXlnaEYKbAn9TalRFec6AvJ1KhFLatYJ6h8HEYq26yggqvuFJZOc=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:58:45.999Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        },
+        {
+          "entity": {
+            "canonical_url": "https://playground.google/game/2779614405469828858",
+            "identity_basis": "game_id_in_visible_card_link",
+            "identity_key": "playground:game:2779614405469828858",
+            "platform_id": "2779614405469828858",
+            "published_at_utc": null,
+            "title_raw": "Iron Vanguard",
+            "type": "game"
+          },
+          "game_associations": [],
+          "observed_at_utc": "2026-10-26T21:58:02.847Z",
+          "selection_evidence": {
+            "source_url": "https://playground.google/",
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "section_name_raw": "热门游戏 / 最热门游戏",
+            "section_definition_raw": null,
+            "region_label_raw": null,
+            "display_position": 10,
+            "position_basis": "one_based_DOM_game_card_order_in_section_excluding_create_promotion_not_official_rank",
+            "platform_rank": null,
+            "ranking_method": null,
+            "personalization_status": "unknown",
+            "note": "Selected most-played/popular tab. Card order is not an official numeric rank and is not monotonically sorted by displayed plays."
+          },
+          "metrics": [
+            {
+              "name": "playground.plays",
+              "value": 1900,
+              "unit": "plays",
+              "raw_value": "1.9K",
+              "raw_text": "1.9K 次游玩",
+              "semantics": "Displayed game plays count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "K × 1000; rounded source abbreviation, exact underlying count and rounding method unknown.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            },
+            {
+              "name": "playground.likes",
+              "value": 27,
+              "unit": "likes",
+              "raw_value": "27",
+              "raw_text": "27 次点赞",
+              "semantics": "Displayed game likes count. Not unique players, concurrent users, or 24-hour change; accumulation window unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "parsing_rule": "Integer copied from displayed count.",
+              "source_url": "https://playground.google/",
+              "observed_at_utc": "2026-10-26T21:58:02.847Z"
+            }
+          ],
+          "description": {
+            "text": "在城市街区进行第一人称战斗，消灭敌人和装甲单位，并争取直升机撤离。",
+            "language": "zh-CN",
+            "status": "generated",
+            "is_generated": true,
+            "basis": "Original concise Chinese summary of current visible discovery card description; not independently playtested.",
+            "source_urls": [
+              "https://playground.google/",
+              "https://playground.google/game/2779614405469828858?ref=popular_games"
+            ],
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "generated_at_utc": "2026-10-26T21:59:52.200925Z"
+          },
+          "source_extensions": {
+            "detail_page_status": "not_collected",
+            "genre_raw": "Scrolling shooter",
+            "player_mode_raw": "单人游戏",
+            "gameplay_summary": null,
+            "creator_profile_data": "deliberately_not_collected",
+            "section_ref": "popular_games",
+            "section_card_url": "https://playground.google/game/2779614405469828858?ref=popular_games"
+          },
+          "cover": {
+            "source_url": "https://lh3.googleusercontent.com/playground/AHwthMFMphlIkETWLnjJV5h6QlO2fedaJvGuRv8dFs9SXXLeZW67DlaMgnA0y1lQjCdTbq5GEdfOmGdOsZ66svZoAb5FvwB1xeXKJ9Fs3acFnP7tj89rWfQ_kgN4K17rAtlOdO-jZWr5dleh2UYSonwSBEmZoFP0Ax688Ceb1lD9e1BF6GdKI6BIT5_YqvGHD4GjPEOWZoUu_l79c6lLFGGprqxE6ogCzsCNJ_xG4jQ=w411-h330-c-rw-v1",
+            "source_page_url": "https://playground.google/",
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "fetched_at_utc": null,
+            "observed_at_utc": "2026-10-26T21:58:02.847Z",
+            "attempted_at_utc": "2026-10-26T21:59:21.837Z",
+            "status": "download_failed",
+            "download_method": "cloud_browser_locator_downloadMedia",
+            "reason": "browser_media_download_timeout",
+            "error": "Matched current rendered image; supported media download timed out after 5000 ms without returning a file. No old image substituted."
+          }
+        }
+      ]
+    }
+  ],
+  "scheduled_for_utc": "2026-10-26T22:00:00Z",
+  "collection_completed_at_utc": "2026-10-26T21:59:52.200925Z",
+  "collection_status": "completed_with_limitations",
+  "collection_context": {
+    "actual_homepage_observed_at_utc": "2026-10-26T21:58:02.847Z",
+    "scheduled_for_utc": "2026-10-26T22:00:00Z",
+    "metric_values_reused_from_prior_snapshot": false,
+    "unique_detail_pages_attempted": 5,
+    "unique_detail_pages_with_metadata": 5,
+    "cross_section_memberships_independent": true,
+    "early_trigger_note": "Actual sampling began before nominal scheduled time; each observation timestamp is retained.",
+    "cover_assets": "14 current visible cover URLs attempted sequentially using supported browser downloadMedia; all timed out, no cached substitution."
+  }
+}
