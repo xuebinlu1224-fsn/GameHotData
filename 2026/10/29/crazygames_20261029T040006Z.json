@@ -1,0 +1,2151 @@
+{
+  "schema_version": "2.1.0",
+  "collection_status": "completed",
+  "document_kind": "scheduled_public_ui_snapshot",
+  "collection_completed_at_utc": "2026-10-29T04:00:06Z",
+  "scheduled_for_utc": "2026-10-29T04:00:00Z",
+  "partition": {
+    "timezone": "Asia/Shanghai",
+    "date": "2026-10-29"
+  },
+  "metric_semantics": {
+    "crazygames.rating": "Displayed score labeled last six months; scale maximum not explicitly present in observed text. Not a usage metric.",
+    "crazygames.likes": "Displayed positive vote count; accumulation window unspecified. K means 1000, M means 1000000; rounding method unknown.",
+    "crazygames.dislikes": "Displayed negative vote count; same precision and time-window limits as likes.",
+    "crazygames.plays": "No game-level plays observed; null is not zero.",
+    "crazygames.active_users": "No game-level active users observed; never inferred from votes."
+  },
+  "limitations": [
+    "20 section observations, 20 unique games, five unique homepage detail inspections; bounded nonrandom sample.",
+    "Homepage US label is not a global ranking. DOM positions are not official ranks.",
+    "Hot monthly title conflicts with last-24-hours introductory wording; no inferred unified window.",
+    "Uncollected metrics are null; ratings, votes and plays are distinct. Category tag counts are not per-game metrics.",
+    "All 20 current rendered cover URLs were downloaded through the cloud browser, fully decoded and SHA-256/size verified; same-content existing repository blobs are reused. Browser download API does not expose HTTP headers/status.",
+    "Descriptions outside current detail sample remain null because current gameplay evidence was not collected.",
+    "No hidden API, login, manual gameplay or video; embedded games may auto-load.",
+    "Source cover rights remain with owners; no redistribution license asserted."
+  ],
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  },
+  "batches": [
+    {
+      "batch_id": "crazygames-homepage-20261029T040006Z",
+      "source": {
+        "platform": "crazygames",
+        "url": "https://www.crazygames.com/",
+        "method": "public_rendered_ui_cloud_browser",
+        "access_context": "logged_out_existing_browser_session"
+      },
+      "scope": {
+        "surface": "homepage",
+        "section_name_raw": "Top games in US today",
+        "section_definition_raw": "Top games in US today",
+        "sampling_rule": "First 10 labeled game cards in observed section DOM order, excluding recently played sidebar. First five unique homepage details inspected; same-run detail observations may be shared with matching Hot identities.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 10,
+        "detail_pages_inspected": 5,
+        "records_with_same_run_detail_metrics": 5,
+        "region_label_raw": "US",
+        "section_label_basis": "Current rendered homepage section heading",
+        "selection_note": "Section identity and ordering derive exclusively from the current rendered surface capture; display positions are not official ranks.",
+        "position_semantics": "Observed section DOM card order, not an official rank"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-29T03:58:54.088Z",
+        "end": "2026-10-29T04:00:06Z"
+      },
+      "records": [
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Bloxd.io",
+            "canonical_url": "https://www.crazygames.com/game/bloxdhop-io",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/bloxdhop-io"
+          },
+          "observed_at_utc": "2026-10-29T03:59:18.163Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 1,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Bloxd.io",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 8.4,
+              "unit": "rating_score",
+              "raw_label": "Rating",
+              "raw_text": "8.4\n(based on last 6 months)",
+              "time_basis": "last_6_months_as_labeled",
+              "precision": "one_decimal",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 6700000,
+              "unit": "likes",
+              "raw_label": "Votes",
+              "raw_value": "6.7M",
+              "raw_text": "6.7M likes and 1.3M dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 1300000,
+              "unit": "dislikes",
+              "raw_label": "Votes",
+              "raw_value": "1.3M",
+              "raw_text": "6.7M likes and 1.3M dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "detail_source_url": "https://www.crazygames.com/game/bloxdhop-io",
+            "observed_at_utc": "2026-10-29T03:59:18.163Z",
+            "tag_labels_raw": [
+              "Meme & bloxy\n\n24",
+              "Sandbox\n\n49",
+              "Mobile\n\n2,721",
+              "Parkour\n\n63",
+              "Minecraft\n\n85",
+              "Jumping\n\n160",
+              "Third Person Shooter\n\n80",
+              "Building\n\n208",
+              "Block\n\n88"
+            ],
+            "detail_collection_scope": "Rendered summary table, tag links, introduction and release/update headings; tag counts are category sizes, not game popularity.",
+            "detail_observation_shared_between_sections": false,
+            "developer_raw": "Arthur",
+            "release_header_raw": "March 2021",
+            "last_updated_header_raw": null,
+            "game_engine_raw": "Externally hosted (iframe)",
+            "orientation_raw": "Landscape",
+            "platforms_raw": "Browser (desktop, mobile, tablet), CrazyGames App (iOS, Android), App Store (iOS, Android)",
+            "release_body_raw": "February 2021",
+            "last_updated_body_raw": null,
+            "release_conflict": {
+              "header_raw": "March 2021",
+              "body_raw": "February 2021",
+              "resolution": null,
+              "note": "Both current page dates retained; source conflict unresolved."
+            }
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/bloxdhop-io_16x9/20261027023447/bloxdhop-io_16x9-cover.png?metadata=none&quality=85&width=675&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/e370d60c6361d7a356454dd9c3f92a64639ad10022558be45096171ea463abad.avif",
+            "sha256": "e370d60c6361d7a356454dd9c3f92a64639ad10022558be45096171ea463abad",
+            "mime_type": "image/avif",
+            "byte_size": 25020,
+            "width": 675,
+            "height": 379,
+            "fetched_at_utc": "2026-10-29T03:59:03.430Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": "方块风格多人冒险，可挑战跑酷、收集资源、制作工具，或参与建造与战斗。",
+            "source_urls": [
+              "https://www.crazygames.com/game/bloxdhop-io"
+            ],
+            "basis": "Original concise Chinese summary from current visible introduction; not gameplay-tested.",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-29T04:00:06Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-29T03:59:18.163Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Openfront",
+            "canonical_url": "https://www.crazygames.com/game/openfront-gsw",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/openfront-gsw"
+          },
+          "observed_at_utc": "2026-10-29T03:59:19.255Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 2,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Openfront",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 4.0,
+              "unit": "rating_score",
+              "raw_label": "Rating",
+              "raw_text": "4.0\n(based on last 6 months)",
+              "time_basis": "last_6_months_as_labeled",
+              "precision": "one_decimal",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 191000,
+              "unit": "likes",
+              "raw_label": "Votes",
+              "raw_value": "191K",
+              "raw_text": "191K likes and 236K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 236000,
+              "unit": "dislikes",
+              "raw_label": "Votes",
+              "raw_value": "236K",
+              "raw_text": "191K likes and 236K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "detail_source_url": "https://www.crazygames.com/game/openfront-gsw",
+            "observed_at_utc": "2026-10-29T03:59:19.255Z",
+            "tag_labels_raw": [
+              "Battle\n\n588",
+              "War\n\n152",
+              "Mouse\n\n1,924"
+            ],
+            "detail_collection_scope": "Rendered summary table, tag links, introduction and release/update headings; tag counts are category sizes, not game popularity.",
+            "detail_observation_shared_between_sections": false,
+            "developer_raw": null,
+            "release_header_raw": "January 2026",
+            "last_updated_header_raw": "July 2026",
+            "game_engine_raw": "Externally hosted (iframe)",
+            "orientation_raw": "Portrait",
+            "platforms_raw": "Browser (desktop-only), Steam",
+            "release_body_raw": null,
+            "last_updated_body_raw": "Jul 13, 2026"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/openfront-gsw_16x9/20260515051210/openfront-gsw_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/f83aa8cf32564897cc2e4ead272fe24d07d94388f90654a94f59563668ac1ac5.avif",
+            "sha256": "f83aa8cf32564897cc2e4ead272fe24d07d94388f90654a94f59563668ac1ac5",
+            "mime_type": "image/avif",
+            "byte_size": 10179,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:03.527Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": "通过扩张领土、发展经济、结盟与进攻争夺地图控制权。",
+            "source_urls": [
+              "https://www.crazygames.com/game/openfront-gsw"
+            ],
+            "basis": "Original concise Chinese summary from current visible introduction; not gameplay-tested.",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-29T04:00:06Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-29T03:59:19.255Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Mahjongg Solitaire",
+            "canonical_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/mahjongg-solitaire"
+          },
+          "observed_at_utc": "2026-10-29T03:59:20.067Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 3,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Mahjongg Solitaire",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 7.8,
+              "unit": "rating_score",
+              "raw_label": "Rating",
+              "raw_text": "7.8\n(based on last 6 months)",
+              "time_basis": "last_6_months_as_labeled",
+              "precision": "one_decimal",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 153000,
+              "unit": "likes",
+              "raw_label": "Votes",
+              "raw_value": "153K",
+              "raw_text": "153K likes and 43K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 43000,
+              "unit": "dislikes",
+              "raw_label": "Votes",
+              "raw_value": "43K",
+              "raw_text": "153K likes and 43K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "detail_source_url": "https://www.crazygames.com/game/mahjongg-solitaire",
+            "observed_at_utc": "2026-10-29T03:59:20.067Z",
+            "tag_labels_raw": [
+              "Timeless classics\n\n24",
+              "Mobile\n\n2,721",
+              "3D\n\n1,559",
+              "Mahjong\n\n38",
+              "Logic\n\n562",
+              "Mouse\n\n1,924"
+            ],
+            "detail_collection_scope": "Rendered summary table, tag links, introduction and release/update headings; tag counts are category sizes, not game popularity.",
+            "detail_observation_shared_between_sections": false,
+            "developer_raw": "Arkadium",
+            "release_header_raw": "August 2022",
+            "last_updated_header_raw": "August 2022",
+            "game_engine_raw": "HTML5",
+            "orientation_raw": "Landscape",
+            "platforms_raw": "Browser (desktop, mobile, tablet), CrazyGames App (iOS, Android), App Store (Android)",
+            "release_body_raw": "October 2016",
+            "last_updated_body_raw": "Aug 03, 2022",
+            "release_conflict": {
+              "header_raw": "August 2022",
+              "body_raw": "October 2016",
+              "resolution": null,
+              "note": "Both current page dates retained; source conflict unresolved."
+            }
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/games/mahjongg-solitaire/cover_16x9-1707829450935.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/cefc3c9991b35eeb7272d1fd5887d2d1b53110081f96406aa98dd7b25127bc88.avif",
+            "sha256": "cefc3c9991b35eeb7272d1fd5887d2d1b53110081f96406aa98dd7b25127bc88",
+            "mime_type": "image/avif",
+            "byte_size": 12419,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:03.620Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": "按传统麻将规则寻找配对并消除，设有计时且不提供洗牌。",
+            "source_urls": [
+              "https://www.crazygames.com/game/mahjongg-solitaire"
+            ],
+            "basis": "Original concise Chinese summary from current visible introduction; not gameplay-tested.",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-29T04:00:06Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-29T03:59:20.067Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Piece of Cake: Merge and Bake",
+            "canonical_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/piece-of-cake-merge-and-bake"
+          },
+          "observed_at_utc": "2026-10-29T03:59:21.069Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 4,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Piece of Cake: Merge and Bake",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 8.2,
+              "unit": "rating_score",
+              "raw_label": "Rating",
+              "raw_text": "8.2\n(based on last 6 months)",
+              "time_basis": "last_6_months_as_labeled",
+              "precision": "one_decimal",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 278000,
+              "unit": "likes",
+              "raw_label": "Votes",
+              "raw_value": "278K",
+              "raw_text": "278K likes and 53K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 53000,
+              "unit": "dislikes",
+              "raw_label": "Votes",
+              "raw_value": "53K",
+              "raw_text": "278K likes and 53K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "detail_source_url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+            "observed_at_utc": "2026-10-29T03:59:21.069Z",
+            "tag_labels_raw": [
+              "Mobile\n\n2,721",
+              "Food\n\n113",
+              "Premium Perks\n\n86",
+              "Story\n\n57",
+              "Cooking\n\n57",
+              "Restaurant\n\n75",
+              "2D\n\n1,263",
+              "Match 3\n\n117",
+              "Can’t stop playing\n\n233",
+              "Mouse\n\n1,924",
+              "Casual\n\n1,073",
+              "Merge\n\n253"
+            ],
+            "detail_collection_scope": "Rendered summary table, tag links, introduction and release/update headings; tag counts are category sizes, not game popularity.",
+            "detail_observation_shared_between_sections": false,
+            "developer_raw": "HG POINT LTD",
+            "release_header_raw": "October 2024",
+            "last_updated_header_raw": "May 2025",
+            "game_engine_raw": "Externally hosted (iframe)",
+            "orientation_raw": "Landscape",
+            "platforms_raw": "Browser (desktop, mobile, tablet)",
+            "release_body_raw": null,
+            "last_updated_body_raw": "May 28, 2025"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/piece-of-cake-merge-and-bake_16x9/20260812042932/piece-of-cake-merge-and-bake_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/76eb5fcef304705148cad19bfcf8d42176a3f9e6c7ecb9929461bec70db8351a.avif",
+            "sha256": "76eb5fcef304705148cad19bfcf8d42176a3f9e6c7ecb9929461bec70db8351a",
+            "mime_type": "image/avif",
+            "byte_size": 11748,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:03.709Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": "解决合并谜题、组合物品并经营咖啡馆，逐步修复家业和推进故事。",
+            "source_urls": [
+              "https://www.crazygames.com/game/piece-of-cake-merge-and-bake"
+            ],
+            "basis": "Original concise Chinese summary from current visible introduction; not gameplay-tested.",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-29T04:00:06Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-29T03:59:21.069Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Ragdoll Archers",
+            "canonical_url": "https://www.crazygames.com/game/ragdoll-archers",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/ragdoll-archers"
+          },
+          "observed_at_utc": "2026-10-29T03:59:21.717Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 5,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Ragdoll Archers",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": 9.1,
+              "unit": "rating_score",
+              "raw_label": "Rating",
+              "raw_text": "9.1\n(based on last 6 months)",
+              "time_basis": "last_6_months_as_labeled",
+              "precision": "one_decimal",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": 2500000,
+              "unit": "likes",
+              "raw_label": "Votes",
+              "raw_value": "2.5M",
+              "raw_text": "2.5M likes and 225K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": 225000,
+              "unit": "dislikes",
+              "raw_label": "Votes",
+              "raw_value": "225K",
+              "raw_text": "2.5M likes and 225K dislikes",
+              "time_basis": "unspecified_by_source",
+              "precision": "approximate_source_abbreviation",
+              "availability": "observed"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_observed_in_inspected_detail"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "inspected",
+            "detail_source_url": "https://www.crazygames.com/game/ragdoll-archers",
+            "observed_at_utc": "2026-10-29T03:59:21.717Z",
+            "tag_labels_raw": [
+              "Mobile\n\n2,721",
+              "5-minute fun\n\n24",
+              "Arena\n\n289",
+              "Physics\n\n424",
+              "Co-op\n\n24",
+              "Stickman\n\n190",
+              "Archery\n\n53",
+              "Casual\n\n1,073",
+              "Ragdoll\n\n65"
+            ],
+            "detail_collection_scope": "Rendered summary table, tag links, introduction and release/update headings; tag counts are category sizes, not game popularity.",
+            "detail_observation_shared_between_sections": false,
+            "developer_raw": "Ericetto",
+            "release_header_raw": null,
+            "last_updated_header_raw": "July 2024",
+            "game_engine_raw": "HTML5",
+            "orientation_raw": "Landscape",
+            "platforms_raw": "Browser (desktop, mobile, tablet), CrazyGames App (iOS, Android), App Store (Android, MSN)",
+            "release_body_raw": null,
+            "last_updated_body_raw": "Jul 09, 2024"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/ragdoll-archers_16x9/20250926080758/ragdoll-archers_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/c2990428a24d350c113801b9ec52a3d7541dab143d331182b14284c4d0f8065a.avif",
+            "sha256": "c2990428a24d350c113801b9ec52a3d7541dab143d331182b14284c4d0f8065a",
+            "mime_type": "image/avif",
+            "byte_size": 7499,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:03.802Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": "用弓箭对抗布娃娃物理火柴人，积累分数升级，并支持双人对战或合作。",
+            "source_urls": [
+              "https://www.crazygames.com/game/ragdoll-archers"
+            ],
+            "basis": "Original concise Chinese summary from current visible introduction; not gameplay-tested.",
+            "language": "zh-CN",
+            "generated_at_utc": "2026-10-29T04:00:06Z",
+            "status": "generated",
+            "is_generated": true,
+            "observed_at_utc": "2026-10-29T03:59:21.717Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Piles of Mahjong",
+            "canonical_url": "https://www.crazygames.com/game/piles-of-mahjong-jhb",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/piles-of-mahjong-jhb"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.088Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 6,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Piles of Mahjong",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/piles-of-mahjong-jhb_16x9/20250203080756/piles-of-mahjong-jhb_16x9-cover?metadata=none&quality=85&width=675&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/6e28879adcc77ad1bb165af38aac0c2bc354cca6bf31abd36f73413e2dec0c7a.avif",
+            "sha256": "6e28879adcc77ad1bb165af38aac0c2bc354cca6bf31abd36f73413e2dec0c7a",
+            "mime_type": "image/avif",
+            "byte_size": 16317,
+            "width": 675,
+            "height": 379,
+            "fetched_at_utc": "2026-10-29T03:59:03.900Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.088Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Words of Wonders",
+            "canonical_url": "https://www.crazygames.com/game/words-of-wonders",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/words-of-wonders"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.088Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 7,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Words of Wonders",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/words-of-wonders_16x9/20231019163757/words-of-wonders_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/5f284a177ec02932ce298b2dfec300c4a50135ccf648f48ed58614895b500b88.avif",
+            "sha256": "5f284a177ec02932ce298b2dfec300c4a50135ccf648f48ed58614895b500b88",
+            "mime_type": "image/avif",
+            "byte_size": 6714,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:03.988Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.088Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Mergest Kingdom",
+            "canonical_url": "https://www.crazygames.com/game/mergest-kingdom",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/mergest-kingdom"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.088Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 8,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Mergest Kingdom",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/mergest-kingdom_16x9/20251124121228/mergest-kingdom_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/906e5c0b0a60fdd28dc05b1e52fd174f34e7e5e91f22a6e0ad713e17fc41e791.avif",
+            "sha256": "906e5c0b0a60fdd28dc05b1e52fd174f34e7e5e91f22a6e0ad713e17fc41e791",
+            "mime_type": "image/avif",
+            "byte_size": 14662,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.079Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.088Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Hidden Objects",
+            "canonical_url": "https://www.crazygames.com/game/hidden-objects",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/hidden-objects"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.088Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 9,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Hidden Objects",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/hidden-objects_16x9/20250505042911/hidden-objects_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/87aa1c576f23610bc065ce795e6e2c8b0f82e0649f3acdc8de951e2d220388c4.avif",
+            "sha256": "87aa1c576f23610bc065ce795e6e2c8b0f82e0649f3acdc8de951e2d220388c4",
+            "mime_type": "image/avif",
+            "byte_size": 18354,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.184Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.088Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Screw Out: Bolts and Nuts",
+            "canonical_url": "https://www.crazygames.com/game/screw-out-bolts-and-nuts",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/screw-out-bolts-and-nuts"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.088Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/",
+            "observed_at_utc": "2026-10-29T03:58:54.088Z",
+            "section_name_raw": "Top games in US today",
+            "section_definition_raw": "Top games in US today",
+            "display_position": 10,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Screw Out: Bolts and Nuts",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/screw-out-bolts-and-nuts_16x9/20250711094331/screw-out-bolts-and-nuts_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/5a375c74cdbe86212190ae406fc778212ef874039bd797c62b55b96b9fccd7da.avif",
+            "sha256": "5a375c74cdbe86212190ae406fc778212ef874039bd797c62b55b96b9fccd7da",
+            "mime_type": "image/avif",
+            "byte_size": 12147,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.278Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.088Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.088Z"
+          }
+        }
+      ]
+    },
+    {
+      "batch_id": "crazygames-hot-20261029T040006Z",
+      "source": {
+        "platform": "crazygames",
+        "url": "https://www.crazygames.com/hot",
+        "method": "public_rendered_ui_cloud_browser",
+        "access_context": "logged_out_existing_browser_session"
+      },
+      "scope": {
+        "surface": "hot",
+        "section_name_raw": "HOT GAMES",
+        "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+        "sampling_rule": "First 10 labeled game cards in observed section DOM order, excluding recently played sidebar. First five unique homepage details inspected; same-run detail observations may be shared with matching Hot identities.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 10,
+        "detail_pages_inspected": 0,
+        "records_with_same_run_detail_metrics": 0,
+        "page_title_raw": "Hot Games This Month on CrazyGames",
+        "time_window_text_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+        "time_window_conflict": "Monthly page title and 24-hour introduction disagree; aggregation window and ranking formula unknown.",
+        "position_semantics": "Observed section DOM card order, not an official rank",
+        "intro_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does."
+      },
+      "observation_window_utc": {
+        "start": "2026-10-29T03:58:54.108Z",
+        "end": "2026-10-29T04:00:06Z"
+      },
+      "records": [
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Wave Dash: Geometry Arrow",
+            "canonical_url": "https://www.crazygames.com/game/wave-dash-geometry-arrow",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/wave-dash-geometry-arrow"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 1,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Wave Dash: Geometry Arrow",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/wave-dash-geometry-arrow_16x9/20260317093038/wave-dash-geometry-arrow_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/30f70f9d1833e647114f67552c4fe367c5f771fdfe4f16b9d0a78892cd5fed7c.avif",
+            "sha256": "30f70f9d1833e647114f67552c4fe367c5f771fdfe4f16b9d0a78892cd5fed7c",
+            "mime_type": "image/avif",
+            "byte_size": 13006,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.385Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "The Speedy Golf",
+            "canonical_url": "https://www.crazygames.com/game/speedy-golf",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/speedy-golf"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 2,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "The Speedy Golf",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/speedy-golf_16x9/20241028084553/speedy-golf_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/f2d934a8be4c2688fbec3939983e3d0475afdb887e3f046c270137d3fd71b89d.avif",
+            "sha256": "f2d934a8be4c2688fbec3939983e3d0475afdb887e3f046c270137d3fd71b89d",
+            "mime_type": "image/avif",
+            "byte_size": 6142,
+            "width": 273,
+            "height": 154,
+            "fetched_at_utc": "2026-10-29T03:59:04.485Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Gas Station",
+            "canonical_url": "https://www.crazygames.com/game/gas-station-ooe",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/gas-station-ooe"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 3,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Gas Station",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/gas-station-ooe_16x9/20260929070423/gas-station-ooe_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/5623e8d1b52150db88f217788b96733da9430015e9322e9cf22741d36af70f11.avif",
+            "sha256": "5623e8d1b52150db88f217788b96733da9430015e9322e9cf22741d36af70f11",
+            "mime_type": "image/avif",
+            "byte_size": 14702,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.575Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Boomng Car Crash",
+            "canonical_url": "https://www.crazygames.com/game/boomng-car-crash",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/boomng-car-crash"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 4,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Boomng Car Crash",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/boomng-car-crash_16x9/20260824082646/boomng-car-crash_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/f5539081819556181850b12265a2528091e41aeb4d4c00ed6309f54961898dd2.avif",
+            "sha256": "f5539081819556181850b12265a2528091e41aeb4d4c00ed6309f54961898dd2",
+            "mime_type": "image/avif",
+            "byte_size": 13106,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.660Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Soccer Lat: 3D Football Online",
+            "canonical_url": "https://www.crazygames.com/game/soccer-lat-3d-football-online",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/soccer-lat-3d-football-online"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 5,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Soccer Lat: 3D Football Online",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/soccer-lat-3d-football-online_16x9/20261005063231/soccer-lat-3d-football-online_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/fa8dd7a5729a078798ec1ac21027999a6f82875e5ee6193e5de5a7149811985f.avif",
+            "sha256": "fa8dd7a5729a078798ec1ac21027999a6f82875e5ee6193e5de5a7149811985f",
+            "mime_type": "image/avif",
+            "byte_size": 14470,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.745Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "World Craft Dream Island",
+            "canonical_url": "https://www.crazygames.com/game/world-craft-dream-island",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/world-craft-dream-island"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 6,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "World Craft Dream Island",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/world-craft-dream-island_16x9/20261027082719/world-craft-dream-island_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/4c973a03844b61772d0ac01c0c73c3025b0b228ee3536fec79122068f7b5fa7b.avif",
+            "sha256": "4c973a03844b61772d0ac01c0c73c3025b0b228ee3536fec79122068f7b5fa7b",
+            "mime_type": "image/avif",
+            "byte_size": 18065,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.827Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Road To Glory",
+            "canonical_url": "https://www.crazygames.com/game/road-to-glory-sxx",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/road-to-glory-sxx"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 7,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Road To Glory",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/road-to-glory-sxx_16x9/20261023043248/road-to-glory-sxx_16x9-cover.png?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/7eb1250707bc17e6561930f8079a9e003c057f8c9572d21acb402220dcf20cf1.avif",
+            "sha256": "7eb1250707bc17e6561930f8079a9e003c057f8c9572d21acb402220dcf20cf1",
+            "mime_type": "image/avif",
+            "byte_size": 17070,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.909Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Harbor Tycoon",
+            "canonical_url": "https://www.crazygames.com/game/harbor-tycoon-fcb",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/harbor-tycoon-fcb"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 8,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Harbor Tycoon",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/harbor-tycoon-fcb_16x9/20260612074853/harbor-tycoon-fcb_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/8c1f900f573b8102d22f0a781bfcee676dccbc19132ca62e729fab1f715700a6.avif",
+            "sha256": "8c1f900f573b8102d22f0a781bfcee676dccbc19132ca62e729fab1f715700a6",
+            "mime_type": "image/avif",
+            "byte_size": 13737,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:04.993Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Stunt Paradise",
+            "canonical_url": "https://www.crazygames.com/game/stunt-paradise",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/stunt-paradise"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 9,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Stunt Paradise",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/stunt-paradise_16x9/20250306034851/stunt-paradise_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/a187766b10abd449fc161b995edc2b25af17831215da405aa8b87886c475dbf9.avif",
+            "sha256": "a187766b10abd449fc161b995edc2b25af17831215da405aa8b87886c475dbf9",
+            "mime_type": "image/avif",
+            "byte_size": 11273,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:05.072Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "title_raw": "Feudal Wars",
+            "canonical_url": "https://www.crazygames.com/game/feudal-wars",
+            "identity_key": "crazygames:game:url:https://www.crazygames.com/game/feudal-wars"
+          },
+          "observed_at_utc": "2026-10-29T03:58:54.108Z",
+          "selection_evidence": {
+            "source_url": "https://www.crazygames.com/hot",
+            "observed_at_utc": "2026-10-29T03:58:54.108Z",
+            "section_name_raw": "HOT GAMES",
+            "section_definition_raw": "On fire right now. These games are blowing up in the last 24 hours — jump in before everyone else does.",
+            "display_position": 10,
+            "position_basis": "DOM_main_game_card_order",
+            "position_semantics": "Observed section DOM card order, not an official rank",
+            "platform_rank": null
+          },
+          "game_associations": [
+            {
+              "label_raw": "Feudal Wars",
+              "basis": "site_game_card",
+              "verification": "not_externally_resolved"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "crazygames.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_text": null,
+              "availability": "not_collected"
+            },
+            {
+              "name": "crazygames.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_text": null,
+              "availability": "not_collected"
+            }
+          ],
+          "source_extensions": {
+            "detail_page_status": "not_inspected"
+          },
+          "cover": {
+            "source_url": "https://imgs.crazygames.com/feudal-wars_16x9/20230925044649/feudal-wars_16x9-cover?metadata=none&quality=85&width=273&fit=crop&dpr=1",
+            "repository_path": "assets/covers/crazygames/1db931a258a28275c97d999902e60da0c6d210acf251bd80d1e4549dfe276f59.avif",
+            "sha256": "1db931a258a28275c97d999902e60da0c6d210acf251bd80d1e4549dfe276f59",
+            "mime_type": "image/avif",
+            "byte_size": 17486,
+            "width": 273,
+            "height": 153,
+            "fetched_at_utc": "2026-10-29T03:59:05.155Z",
+            "status": "downloaded",
+            "http_status": null,
+            "http_content_type": null,
+            "http_validation": "Browser download completed; HTTP response status/headers not exposed by supported download API. Actual file MIME and full image decode verified.",
+            "source_page_url": "https://www.crazygames.com/hot",
+            "source_reobserved_at_utc": "2026-10-29T03:58:54.108Z"
+          },
+          "description": {
+            "text": null,
+            "source_urls": [
+              "https://www.crazygames.com/hot"
+            ],
+            "basis": "Gameplay evidence not collected in bounded current detail sample; not inferred from title.",
+            "language": "zh-CN",
+            "generated_at_utc": null,
+            "status": "unavailable",
+            "is_generated": false,
+            "observed_at_utc": "2026-10-29T03:58:54.108Z"
+          }
+        }
+      ]
+    }
+  ]
+}
