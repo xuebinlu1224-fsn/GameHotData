@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.1.0",
+  "document_kind": "scheduled_public_ui_snapshot",
+  "collection_status": "blocked",
+  "scheduled_for_utc": "2026-10-30T10:00:00Z",
+  "collection_completed_at_utc": "2026-10-30T09:58:38Z",
+  "partition": {
+    "timezone": "Asia/Shanghai",
+    "date": "2026-10-30"
+  },
+  "failure": {
+    "status": "blocked",
+    "reason_code": "cloud_environment_unavailable",
+    "reason": "Assistant cloud execution environment failed to start: exec-server initialize handshake timed out after 10s. Cloud browser tools unavailable; no source page was opened or sampled. This is an infrastructure failure, not a platform access or login observation.",
+    "detected_at_utc": "2026-10-30T09:58:38Z"
+  },
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  },
+  "collection_context": {
+    "browser_environment": "assistant_cloud_browser_unavailable",
+    "source_pages_opened": 0,
+    "session_status": "not_checked",
+    "private_areas_collected": false,
+    "historical_observations_reused": false,
+    "detail_pages_attempted": 0,
+    "detail_pages_metadata_observed": 0,
+    "cover_downloads_attempted": 0,
+    "cover_downloads_succeeded": 0,
+    "login_attempted_using_normal_ui": false,
+    "credentials_entered": false,
+    "run_timing_note": "Scheduled run arrived before its nominal time; actual failure-record completion timestamp is retained."
+  },
+  "batches": [
+    {
+      "batch_id": "poki-homepage_explicit_top_five_and_five_detail_attempts-20261030T095838Z",
+      "status": "blocked",
+      "source": {
+        "platform": "poki",
+        "url": "https://poki.com/zh",
+        "method": "public_rendered_ui_cloud_browser_not_executed",
+        "access_context": "not_checked_cloud_environment_unavailable",
+        "ui_language_observed": null,
+        "requested_language": "zh"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-30"
+      },
+      "observation_window_utc": {
+        "start": null,
+        "end": null
+      },
+      "scope": {
+        "surface": "homepage_explicit_top_five_and_five_detail_attempts",
+        "surface_status": "requested_not_sampled_due_to_cloud_environment_unavailable",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "Intended at most two visible popular/recommended sections, first 10 cards per section and first five unique game details per platform; no source observation possible in this run.",
+        "coverage": "not_collected",
+        "record_count": 0,
+        "detail_pages_inspected": 0,
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "position_semantics": null,
+        "region_label_raw": null
+      },
+      "failure": {
+        "status": "blocked",
+        "reason_code": "cloud_environment_unavailable",
+        "reason": "Assistant cloud execution environment failed to start: exec-server initialize handshake timed out after 10s. Cloud browser tools unavailable; no source page was opened or sampled. This is an infrastructure failure, not a platform access or login observation.",
+        "source_url": "https://poki.com/zh",
+        "observed_at_utc": null,
+        "detected_at_utc": "2026-10-30T09:58:38Z"
+      },
+      "limitations": [
+        "No current page, section, game, metric, image or description observed. Requested surface identifier is a collection target, not evidence of current page structure.",
+        "No historical observations or assets substituted. Empty records mean collection was blocked, not zero games or zero popularity.",
+        "Current login status, region, sorting and source availability were not checked. No hidden APIs or user computer used."
+      ],
+      "records": []
+    }
+  ]
+}
