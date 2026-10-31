@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-10-31T04:08:44.260Z",
+  "kind": "snapshot_integrity_notice",
+  "affected_file": "2026/10/31/crazygames_20261030T220920Z.json",
+  "affected_commit": "f094cbaeebf0431f4ad071ddac9f807ea63fe33d",
+  "affected_git_blob_sha": "37e14eb6116eac9d593cf60e24bf17d359292606",
+  "affected_size_bytes": 100109,
+  "status": "invalid_json_do_not_parse_or_use_for_comparison",
+  "finding": "Published file begins with a tool-output truncation warning and includes truncated text. Strict JSON parsing fails. Earlier readback success claim was incorrect.",
+  "action": "Original historical file retained unchanged. No values repaired or inferred from current observations. New current snapshots are separate observations.",
+  "verified_unaffected_file": "2026/10/31/crazygames_20261030T160439Z.json",
+  "verified_unaffected_git_blob_sha": "38c74d9b1e0ab3db80bf7b4f07840b8a3cc8139e",
+  "review_scope": "Only the two named recent CrazyGames snapshots were reviewed; not a complete historical audit.",
+  "local_original_note": "A valid local generation artifact exists but is not published here as a replacement. Its Git blob SHA is d12d46ada0330cdf69cdd218c32499d7484c492c, size 109289 bytes."
+}
