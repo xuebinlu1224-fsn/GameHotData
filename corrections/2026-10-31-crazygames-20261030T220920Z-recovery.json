@@ -1,0 +1,181 @@
+{
+  "document_kind": "append_only_historical_snapshot_recovery",
+  "status": "recovered_from_retained_same_run_original",
+  "restored_at_utc": "2026-10-31T04:12:45.058811Z",
+  "corrupted_original_path": "2026/10/31/crazygames_20261030T220920Z.json",
+  "recovered_snapshot_path": "2026/10/31/crazygames_20261030T220920Z_recovered_20261031.json",
+  "prior_integrity_notice_path": "corrections/2026-10-31-crazygames-20261030T220920Z-integrity.json",
+  "original_publication_commit": "f094cbaeebf0431f4ad071ddac9f807ea63fe33d",
+  "original_scheduled_for_utc": "2026-10-30T22:00:00Z",
+  "original_collection_completed_at_utc": "2026-10-30T22:09:38.375769Z",
+  "original_observation_timestamps_preserved": true,
+  "recovered_bytes_identical_to_retained_original": true,
+  "recovered_sha256": "f7faf4e67b4e43a9b27b997e3a5e3a98d7d69ad45f10a83c1b98886e6335b124",
+  "recovered_git_blob_sha": "d12d46ada0330cdf69cdd218c32499d7484c492c",
+  "recovered_byte_size": 109289,
+  "record_count": 20,
+  "detail_count": 5,
+  "cover_count": 20,
+  "provenance": {
+    "method": "Re-executed retained CrazyGames-only builder against same-run retained homepage/hot/detail DOM captures and same-run downloaded asset copies, using original generation timestamp 2026-10-30T22:09:20Z. Recursive equality passed for entire document except original completion timestamp, which is preserved verbatim. No current DOM used.",
+    "evidence_files": [
+      {
+        "name": "cg-home.json",
+        "sha256": "57048fbd951b9235ae5f0a8bea96e4082e8a43b96ab296f4aafbaa2427b7abed"
+      },
+      {
+        "name": "cg-hot.json",
+        "sha256": "49e39d3a8557e566f73d0b7316b23aa92c83dfe0b2bf0ba94b3f331c7ee84e17"
+      },
+      {
+        "name": "cg-details.json",
+        "sha256": "088ff2d5e80af380874d0e5a98689983e6dc0f7e911779bf77457e83fc86d973"
+      },
+      {
+        "name": "cg-home-downloads.json",
+        "sha256": "3d2c9ef40bcf4a9c48dae09e67f51f7d99ae12153f060eaa446e24536387766e"
+      },
+      {
+        "name": "cg-hot-downloads.json",
+        "sha256": "3553940a7123c13cf2723f45ad33d1309496752e65665b9f412f0266c3614a11"
+      },
+      {
+        "name": "publication_manifest.json",
+        "sha256": "26db28ae78a822690919b56a885744821267951e4c9f16dd6a2be460f6bf41f8"
+      },
+      {
+        "name": "build.py",
+        "sha256": "c57101d328c97e57d03fb4c21766f712d62540be3594c5bbf8177142fffafbe3"
+      }
+    ],
+    "limitations": [
+      "Evidence capture files are retained privately, not published wholesale because they include full source introduction text and cloud filesystem locations.",
+      "Ephemeral original browser download paths no longer exist. Same-run content-addressed asset copies were independently decoded and hash/MIME/dimension/size verified against original records and manifest.",
+      "Original completion timestamp 22:09:38.375769Z is retained metadata, not independently re-observed; generated_at timestamps remain 22:09:20Z.",
+      "Previous publication_validation exact_bytes_equal claim was incorrect and not used as provenance proof."
+    ]
+  },
+  "usage_note": "Use recovered snapshot instead of malformed original for this historical observation. Do not count both as two samples. Restored_at is publication recovery time, not observation time. All old files and malformed original remain unchanged.",
+  "cover_validation": [
+    {
+      "path": "assets/covers/crazygames/e370d60c6361d7a356454dd9c3f92a64639ad10022558be45096171ea463abad.avif",
+      "sha256": "e370d60c6361d7a356454dd9c3f92a64639ad10022558be45096171ea463abad",
+      "git_blob_sha": "bdc61a303571676e7fca19443c6ec90cd3962190",
+      "byte_size": 25020
+    },
+    {
+      "path": "assets/covers/crazygames/f83aa8cf32564897cc2e4ead272fe24d07d94388f90654a94f59563668ac1ac5.avif",
+      "sha256": "f83aa8cf32564897cc2e4ead272fe24d07d94388f90654a94f59563668ac1ac5",
+      "git_blob_sha": "1a4020e7391f5ea3b0fbc3db8d7c57d077abf42e",
+      "byte_size": 10179
+    },
+    {
+      "path": "assets/covers/crazygames/cefc3c9991b35eeb7272d1fd5887d2d1b53110081f96406aa98dd7b25127bc88.avif",
+      "sha256": "cefc3c9991b35eeb7272d1fd5887d2d1b53110081f96406aa98dd7b25127bc88",
+      "git_blob_sha": "df10d654fb560f3ab5916cf0345f66e39a71cab4",
+      "byte_size": 12419
+    },
+    {
+      "path": "assets/covers/crazygames/76eb5fcef304705148cad19bfcf8d42176a3f9e6c7ecb9929461bec70db8351a.avif",
+      "sha256": "76eb5fcef304705148cad19bfcf8d42176a3f9e6c7ecb9929461bec70db8351a",
+      "git_blob_sha": "ba4437cc79a5adcc2ed3639add2c0d5256402cc5",
+      "byte_size": 11748
+    },
+    {
+      "path": "assets/covers/crazygames/c2990428a24d350c113801b9ec52a3d7541dab143d331182b14284c4d0f8065a.avif",
+      "sha256": "c2990428a24d350c113801b9ec52a3d7541dab143d331182b14284c4d0f8065a",
+      "git_blob_sha": "9f1cd1077945b49fa9ef08eb3c55569ba371f10e",
+      "byte_size": 7499
+    },
+    {
+      "path": "assets/covers/crazygames/6e28879adcc77ad1bb165af38aac0c2bc354cca6bf31abd36f73413e2dec0c7a.avif",
+      "sha256": "6e28879adcc77ad1bb165af38aac0c2bc354cca6bf31abd36f73413e2dec0c7a",
+      "git_blob_sha": "267b956b6de2303b7d9f1837fe4fddb1510f0fff",
+      "byte_size": 16317
+    },
+    {
+      "path": "assets/covers/crazygames/5f284a177ec02932ce298b2dfec300c4a50135ccf648f48ed58614895b500b88.avif",
+      "sha256": "5f284a177ec02932ce298b2dfec300c4a50135ccf648f48ed58614895b500b88",
+      "git_blob_sha": "f0fdd9ee84c76a25e4625e1d228517ad85df6b77",
+      "byte_size": 6714
+    },
+    {
+      "path": "assets/covers/crazygames/ee6ada5f864e6aecb00c08053f304e9cfaaf148137d1814ee4b8578f3be66418.avif",
+      "sha256": "ee6ada5f864e6aecb00c08053f304e9cfaaf148137d1814ee4b8578f3be66418",
+      "git_blob_sha": "8b20396dafe3bccb60ab96fb72efedcdb1828726",
+      "byte_size": 6928
+    },
+    {
+      "path": "assets/covers/crazygames/87aa1c576f23610bc065ce795e6e2c8b0f82e0649f3acdc8de951e2d220388c4.avif",
+      "sha256": "87aa1c576f23610bc065ce795e6e2c8b0f82e0649f3acdc8de951e2d220388c4",
+      "git_blob_sha": "c23269151e083c52e337766ddc31c8c4bc9824ab",
+      "byte_size": 18354
+    },
+    {
+      "path": "assets/covers/crazygames/906e5c0b0a60fdd28dc05b1e52fd174f34e7e5e91f22a6e0ad713e17fc41e791.avif",
+      "sha256": "906e5c0b0a60fdd28dc05b1e52fd174f34e7e5e91f22a6e0ad713e17fc41e791",
+      "git_blob_sha": "b9abe905037e6094a30c248ebbf63f645b960c02",
+      "byte_size": 14662
+    },
+    {
+      "path": "assets/covers/crazygames/fd3fe2ac4dd9eef939792fe804eed0102e2d1d8ef1d19c70e11d39938c495f5f.avif",
+      "sha256": "fd3fe2ac4dd9eef939792fe804eed0102e2d1d8ef1d19c70e11d39938c495f5f",
+      "git_blob_sha": "b2283b1cac0c79d54320fc8bd6f471649b89cc03",
+      "byte_size": 13173
+    },
+    {
+      "path": "assets/covers/crazygames/004dec6c8e4b6ae765963d0c45c3fb697e2cfc03cb9ea169a8fb4d4c1632ef55.avif",
+      "sha256": "004dec6c8e4b6ae765963d0c45c3fb697e2cfc03cb9ea169a8fb4d4c1632ef55",
+      "git_blob_sha": "a418a2976bd79c4a3046d06c55ee09acf4d64bdd",
+      "byte_size": 15626
+    },
+    {
+      "path": "assets/covers/crazygames/4cd96256f2ff934a2ee10940fd3be3715b968ec44838aeb97cb511f4d91ac7a8.avif",
+      "sha256": "4cd96256f2ff934a2ee10940fd3be3715b968ec44838aeb97cb511f4d91ac7a8",
+      "git_blob_sha": "a40a015e5624ab6c34985df1cf9160d0b2770565",
+      "byte_size": 15672
+    },
+    {
+      "path": "assets/covers/crazygames/72f2b259de8b7fa368eae488fed66625233d95b9770ab7bb68236fdf955c22ba.avif",
+      "sha256": "72f2b259de8b7fa368eae488fed66625233d95b9770ab7bb68236fdf955c22ba",
+      "git_blob_sha": "448048ce08b345aec1dffbf8b3f9dd75dd161597",
+      "byte_size": 9103
+    },
+    {
+      "path": "assets/covers/crazygames/c1d029c29917e4b98d00584aaab04bce04d11f7945b1592cbbd137e5dfcc686d.avif",
+      "sha256": "c1d029c29917e4b98d00584aaab04bce04d11f7945b1592cbbd137e5dfcc686d",
+      "git_blob_sha": "29872cae3f9a87f43f0c3ea1b7c1a05e10bb5623",
+      "byte_size": 6811
+    },
+    {
+      "path": "assets/covers/crazygames/ea0cad6183f2b8e0b0027f5f7aa2e250b57fbd2534602d4bf2ee608567b11ab1.avif",
+      "sha256": "ea0cad6183f2b8e0b0027f5f7aa2e250b57fbd2534602d4bf2ee608567b11ab1",
+      "git_blob_sha": "779f35777e043e9cdd55a532170327b4f09c9617",
+      "byte_size": 12604
+    },
+    {
+      "path": "assets/covers/crazygames/018c40e08bdf8b76072ad459b79b0c3814f30f3fb596c381d9cc694ab81368d4.avif",
+      "sha256": "018c40e08bdf8b76072ad459b79b0c3814f30f3fb596c381d9cc694ab81368d4",
+      "git_blob_sha": "f55b6e6e1f47b130d8e84ae149fa4c6e877325c5",
+      "byte_size": 14831
+    },
+    {
+      "path": "assets/covers/crazygames/7ecc6c5a9fc4fdb543d8a007521cd34448e7d46be194bca34d1fc2da2b48edf6.avif",
+      "sha256": "7ecc6c5a9fc4fdb543d8a007521cd34448e7d46be194bca34d1fc2da2b48edf6",
+      "git_blob_sha": "73205bce51e14f6dba8ed1cd8b4906dcee498ad8",
+      "byte_size": 10032
+    },
+    {
+      "path": "assets/covers/crazygames/535e36d0523d0ef437849b366f1a6e48f549001a3cdf01abca4cd3ff8819b515.avif",
+      "sha256": "535e36d0523d0ef437849b366f1a6e48f549001a3cdf01abca4cd3ff8819b515",
+      "git_blob_sha": "6ecfcf2bb385feaef9c8639ade16e81e4cfbf75c",
+      "byte_size": 22289
+    },
+    {
+      "path": "assets/covers/crazygames/fce99f6fbf6951b8faac84da1a55318314c1e69eaf4f4dad6d81c60c89caba2b.avif",
+      "sha256": "fce99f6fbf6951b8faac84da1a55318314c1e69eaf4f4dad6d81c60c89caba2b",
+      "git_blob_sha": "d86706af94beb70b09a08e7debf01bb7f019a870",
+      "byte_size": 24290
+    }
+  ]
+}
