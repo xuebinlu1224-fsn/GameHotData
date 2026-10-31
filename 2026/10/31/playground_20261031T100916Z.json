@@ -1,0 +1,121 @@
+{
+  "schema_version": "2.1.0",
+  "document_kind": "scheduled_public_ui_snapshot",
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  },
+  "collection_status": "login_required",
+  "scheduled_for_utc": "2026-10-31T10:00:00Z",
+  "collection_completed_at_utc": "2026-10-31T10:09:16Z",
+  "collection_context": {
+    "scheduled_for_utc": "2026-10-31T10:00:00Z",
+    "source_url": "https://playground.google/",
+    "session_status": "login_required",
+    "private_areas_collected": false,
+    "historical_observations_reused": false,
+    "detail_pages_attempted": 0,
+    "detail_pages_metadata_observed": 0,
+    "cover_downloads_attempted": 0,
+    "cover_downloads_succeeded": 0,
+    "login_attempted_using_normal_ui": true,
+    "credentials_entered": false,
+    "failure_reason": "Normal Playground sign-in reached Google identifier form with no active existing session. No credentials, new permissions or profile creation attempted. Initial behind-overlay discovery DOM excluded."
+  },
+  "batches": [
+    {
+      "batch_id": "playground-homepage_trending_carousel-20261031T100916Z",
+      "status": "login_required",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "rendered_DOM_read_in_assistant_cloud_browser",
+        "access_context": "login_required_no_restricted_content_collected",
+        "ui_language_observed": "Chinese login UI",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-31"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-31T10:07:16.160Z",
+        "end": "2026-10-31T10:08:03.402Z"
+      },
+      "scope": {
+        "surface": "homepage_trending_carousel",
+        "surface_status": "requested_not_sampled_due_to_login_required",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "Intended first 10 cards in this section; no cards sampled because login wall remained.",
+        "coverage": "not_collected",
+        "record_count": 0,
+        "detail_pages_inspected": 0,
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "position_semantics": null,
+        "region_label_raw": null
+      },
+      "failure": {
+        "status": "login_required",
+        "reason": "Normal Playground sign-in reached Google identifier form with no active existing session. No credentials, new permissions or profile creation attempted. Initial behind-overlay discovery DOM excluded.",
+        "source_url": "https://playground.google/",
+        "observed_at_utc": "2026-10-31T10:08:03.402Z"
+      },
+      "limitations": [
+        "No restricted game cards, metrics, covers or descriptions collected. Initial transient DOM behind login wall was not used.",
+        "No historical observations substituted; requested surface labels do not assert that the sections were observed in this run.",
+        "No account identifier, avatar, email, profile, recent play history, credentials or authentication URL query retained."
+      ],
+      "records": []
+    },
+    {
+      "batch_id": "playground-homepage_popular_played_carousel-20261031T100916Z",
+      "status": "login_required",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "rendered_DOM_read_in_assistant_cloud_browser",
+        "access_context": "login_required_no_restricted_content_collected",
+        "ui_language_observed": "Chinese login UI",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-10-31"
+      },
+      "observation_window_utc": {
+        "start": "2026-10-31T10:07:16.160Z",
+        "end": "2026-10-31T10:08:03.402Z"
+      },
+      "scope": {
+        "surface": "homepage_popular_played_carousel",
+        "surface_status": "requested_not_sampled_due_to_login_required",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "Intended first 10 cards in this section; no cards sampled because login wall remained.",
+        "coverage": "not_collected",
+        "record_count": 0,
+        "detail_pages_inspected": 0,
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "position_semantics": null,
+        "region_label_raw": null
+      },
+      "failure": {
+        "status": "login_required",
+        "reason": "Normal Playground sign-in reached Google identifier form with no active existing session. No credentials, new permissions or profile creation attempted. Initial behind-overlay discovery DOM excluded.",
+        "source_url": "https://playground.google/",
+        "observed_at_utc": "2026-10-31T10:08:03.402Z"
+      },
+      "limitations": [
+        "No restricted game cards, metrics, covers or descriptions collected. Initial transient DOM behind login wall was not used.",
+        "No historical observations substituted; requested surface labels do not assert that the sections were observed in this run.",
+        "No account identifier, avatar, email, profile, recent play history, credentials or authentication URL query retained."
+      ],
+      "records": []
+    }
+  ]
+}
