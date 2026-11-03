@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.1.0",
+  "document_kind": "scheduled_public_ui_snapshot",
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  },
+  "collection_status": "login_required",
+  "scheduled_for_utc": "2026-11-03T16:00:00Z",
+  "collection_completed_at_utc": "2026-11-03T16:05:19Z",
+  "collection_context": {
+    "scheduled_for_utc": "2026-11-03T16:00:00Z",
+    "source_url": "https://playground.google/",
+    "session_status": "login_required",
+    "private_areas_collected": false,
+    "historical_observations_reused": false,
+    "detail_pages_attempted": 0,
+    "detail_pages_metadata_observed": 0,
+    "cover_downloads_attempted": 0,
+    "cover_downloads_succeeded": 0,
+    "login_attempted_using_normal_ui": true,
+    "credentials_entered": false,
+    "failure_reason": "Stable sign-in overlay remained visible; normal sign-in action led to Google identifier form with email/phone input and no existing-account chooser. No credentials, new permissions or profiles entered; stopped without reading masked game data.",
+    "session_evidence": {
+      "initial_at_utc": "2026-11-03T16:01:18Z",
+      "stable_overlay_checked_at_utc": "2026-11-03T16:01:22Z",
+      "overlay_heading_raw": "使用 Google Play 游戏玩家资料登录 Playground",
+      "action": "clicked visible 登录 button",
+      "result_at_utc": "2026-11-03T16:01:41Z",
+      "result_origin": "https://accounts.google.com",
+      "result_path": "/v3/signin/identifier",
+      "visible_heading_raw": "登录",
+      "visible_identifier_label_raw": "邮箱或电话号码",
+      "existing_account_chooser_observed": false,
+      "timestamp_precision_note": "UTC tool-result observation boundaries, second precision. Initial transient discovery DOM was not accepted as successful access; subsequent stable login wall checked before normal login action."
+    }
+  },
+  "batches": [
+    {
+      "batch_id": "playground-homepage_trending_carousel-20261103T160519Z",
+      "status": "login_required",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "cloud_browser_normal_ui_session_check",
+        "access_context": "login_wall_not_bypassed",
+        "ui_language_observed": "Chinese",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-11-04"
+      },
+      "observation_window_utc": {
+        "start": "2026-11-03T16:01:18Z",
+        "end": "2026-11-03T16:01:41Z"
+      },
+      "scope": {
+        "surface": "homepage_trending_carousel",
+        "surface_status": "login_required",
+        "record_count": 0,
+        "detail_pages_inspected": 0,
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "selected_tab_raw": null,
+        "sort": null,
+        "region_label_raw": null,
+        "position_semantics": null,
+        "sampling_rule": "Requested first ten current visible public game cards; no sampling performed because authentication required.",
+        "coverage": "not_sampled"
+      },
+      "failure_reason": "Stable sign-in overlay remained visible; normal sign-in action led to Google identifier form with email/phone input and no existing-account chooser. No credentials, new permissions or profiles entered; stopped without reading masked game data.",
+      "limitations": [
+        "Login overlay data not read or retained. No personal identifiers, credentials, avatars or recent play history collected. No previous values substituted."
+      ],
+      "records": []
+    },
+    {
+      "batch_id": "playground-homepage_popular_played_carousel-20261103T160519Z",
+      "status": "login_required",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "cloud_browser_normal_ui_session_check",
+        "access_context": "login_wall_not_bypassed",
+        "ui_language_observed": "Chinese",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-11-04"
+      },
+      "observation_window_utc": {
+        "start": "2026-11-03T16:01:18Z",
+        "end": "2026-11-03T16:01:41Z"
+      },
+      "scope": {
+        "surface": "homepage_popular_played_carousel",
+        "surface_status": "login_required",
+        "record_count": 0,
+        "detail_pages_inspected": 0,
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "selected_tab_raw": null,
+        "sort": null,
+        "region_label_raw": null,
+        "position_semantics": null,
+        "sampling_rule": "Requested first ten current visible public game cards; no sampling performed because authentication required.",
+        "coverage": "not_sampled"
+      },
+      "failure_reason": "Stable sign-in overlay remained visible; normal sign-in action led to Google identifier form with email/phone input and no existing-account chooser. No credentials, new permissions or profiles entered; stopped without reading masked game data.",
+      "limitations": [
+        "Login overlay data not read or retained. No personal identifiers, credentials, avatars or recent play history collected. No previous values substituted."
+      ],
+      "records": []
+    }
+  ],
+  "metric_semantics": {
+    "playground.plays": "Displayed play count; not unique players, concurrency or 24-hour growth. Accumulation window unspecified.",
+    "playground.likes": "Displayed positive reactions, not plays. Accumulation window unspecified.",
+    "playground.player_growth_24h": "Trending section selection definition, not an observed numerical value. Unknown null; no single-snapshot growth calculation."
+  }
+}
