@@ -1,0 +1,172 @@
+{
+  "schema_version": "2.1.0",
+  "document_kind": "scheduled_public_ui_snapshot",
+  "status": "login_required",
+  "scheduled_for_utc": "2026-11-05T10:00:00Z",
+  "collection_completed_at_utc": "2026-11-05T10:02:10Z",
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries only when actually observed",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license.",
+    "account_data_storage": "none"
+  },
+  "collection_context": {
+    "scheduled_for_utc": "2026-11-05T10:00:00Z",
+    "method": "rendered_UI_read_in_assistant_cloud_browser",
+    "metric_values_reused_from_prior_snapshot": false,
+    "access_status": "login_required",
+    "access_check_attempts": [
+      {
+        "observed_at_utc": "2026-11-05T10:01:09Z",
+        "phase": "scheduled_observation",
+        "source_url": "https://playground.google/",
+        "action": "Opened the homepage in the assistant cloud browser and checked the rendered screenshot.",
+        "result": "Homepage presented a Playground sign-in overlay. Discovery content behind the overlay was not treated as accessible or collected."
+      },
+      {
+        "observed_at_utc": "2026-11-05T10:01:30Z",
+        "phase": "scheduled_observation",
+        "source_url": "https://accounts.google.com/",
+        "action": "Clicked the ordinary Playground login button once to attempt an existing Google session.",
+        "result": "Google sign-in identifier page required email or phone; no authenticated existing account chooser was shown.",
+        "outcome": "login_required"
+      }
+    ],
+    "credentials_entered": false,
+    "account_identity_entered": false,
+    "new_permissions_accepted": false,
+    "new_profile_created": false,
+    "private_areas_collected": false,
+    "actual_observed_at_utc": "2026-11-05T10:01:30Z",
+    "login_blocker": {
+      "status": "login_required",
+      "target": "https://playground.google/",
+      "observed_page": "https://accounts.google.com/v3/signin/identifier",
+      "evidence_raw": [
+        "登录",
+        "使用您的 Google 账号",
+        "邮箱或电话号码",
+        "下一步"
+      ],
+      "reason": "No reusable authenticated Google session was available through the ordinary login flow. Continuing would require supplying account identity and potentially fresh credentials; stopped at identifier prompt.",
+      "action_outcome": "stopped_before_identity_or_credentials_entry"
+    },
+    "reference_snapshot": "2026/11/05/playground_20261105T040018Z.json",
+    "repository_commit_sha_reviewed": "b98fcad6b52b8d73be85bc3edd4b0dd055c07251",
+    "readme_sha_reviewed": "40ab2223f1df2c23777bfd88356ccf8edcfb827f",
+    "screenshot_evidence_status": "Homepage sign-in overlay visually verified in the tool result; no screenshot file was persisted and no game-cover images were collected."
+  },
+  "batches": [
+    {
+      "batch_id": "playground-trending-20261105T100210Z",
+      "status": "login_required",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "rendered_UI_read_in_assistant_cloud_browser",
+        "access_context": "login_required_existing_session_unavailable",
+        "ui_language_observed": "zh-CN",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "observation_window_utc": {
+        "start": "2026-11-05T10:01:09Z",
+        "end": "2026-11-05T10:01:30Z"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-11-05"
+      },
+      "scope": {
+        "surface": "homepage_trending_carousel",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "Attempt first 10 general discovery game cards in the actual selected section, retaining each section observation separately; collect no records when authentication is required.",
+        "coverage": "not_collected_login_required",
+        "record_count": 0,
+        "target_record_count": 10,
+        "detail_pages_inspected": 0,
+        "source_extensions": {
+          "section_key": "trending",
+          "section_name_raw": null,
+          "section_definition_raw": null,
+          "selected_tab_raw": null,
+          "section_observation_status": "not_visible_login_required",
+          "detail_selection_rule": "Inspect the first five unique games from the requested observed sections; not applied because the login gate prevented sampling."
+        },
+        "surface_status": "not_visible_login_required",
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "selected_tab_raw": null,
+        "region_label_raw": null,
+        "position_semantics": null
+      },
+      "limitations": [
+        "Login was required. No discovery cards or section labels were accepted as accessible observations in this scheduled run; data exposed behind the sign-in overlay was excluded.",
+        "No prior snapshot records, metrics, tab selections, covers or descriptions were reused.",
+        "Empty records indicate inaccessible sampling, not zero available games or zero activity.",
+        "No private account identity, profile, history, email, avatar or credentials collected; no hidden or masked content accessed."
+      ],
+      "records": []
+    },
+    {
+      "batch_id": "playground-popular-20261105T100210Z",
+      "status": "login_required",
+      "source": {
+        "platform": "playground",
+        "url": "https://playground.google/",
+        "method": "rendered_UI_read_in_assistant_cloud_browser",
+        "access_context": "login_required_existing_session_unavailable",
+        "ui_language_observed": "zh-CN",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "observation_window_utc": {
+        "start": "2026-11-05T10:01:09Z",
+        "end": "2026-11-05T10:01:30Z"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-11-05"
+      },
+      "scope": {
+        "surface": "homepage_popular_carousel",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "Attempt first 10 general discovery game cards in the actual selected section, retaining each section observation separately; collect no records when authentication is required.",
+        "coverage": "not_collected_login_required",
+        "record_count": 0,
+        "target_record_count": 10,
+        "detail_pages_inspected": 0,
+        "source_extensions": {
+          "section_key": "popular",
+          "section_name_raw": null,
+          "section_definition_raw": null,
+          "selected_tab_raw": null,
+          "section_observation_status": "not_visible_login_required",
+          "detail_selection_rule": "Inspect the first five unique games from the requested observed sections; not applied because the login gate prevented sampling."
+        },
+        "surface_status": "not_visible_login_required",
+        "section_name_raw": null,
+        "section_definition_raw": null,
+        "selected_tab_raw": null,
+        "region_label_raw": null,
+        "position_semantics": null,
+        "surface_semantics": "Generic intended Popular discovery section; selected tab was not observed. Do not assume equivalence to prior homepage_popular_played_carousel samples with a verified most-played selection."
+      },
+      "limitations": [
+        "Login was required. No discovery cards or section labels were accepted as accessible observations in this scheduled run; data exposed behind the sign-in overlay was excluded.",
+        "No prior snapshot records, metrics, tab selections, covers or descriptions were reused.",
+        "Empty records indicate inaccessible sampling, not zero available games or zero activity.",
+        "No private account identity, profile, history, email, avatar or credentials collected; no hidden or masked content accessed."
+      ],
+      "records": []
+    }
+  ],
+  "enrichment": {
+    "metrics_refreshed": false,
+    "status": "not_attempted_login_required",
+    "cover_count": 0,
+    "description_count": 0,
+    "reason": "No accessible game records or cover elements observed in this run."
+  },
+  "collection_status": "login_required"
+}
