@@ -1,0 +1,1174 @@
+{
+  "schema_version": "2.1.0",
+  "document_kind": "public_ui_sample",
+  "data_policy": {
+    "raw_media_storage": "downloaded_game_cover_thumbnails_only",
+    "content_storage": "factual game discovery metadata and short assistant-generated Chinese summaries",
+    "rights_note": "Source images remain owned by their respective rights holders. Downloading and public visibility do not establish a redistribution license. No full descriptions, videos, game code or other game assets stored.",
+    "account_data_storage": "none"
+  },
+  "scheduled_for_utc": "2026-11-06T10:00:00Z",
+  "collection_completed_at_utc": "2026-11-06T10:05:40Z",
+  "batches": [
+    {
+      "batch_id": "poki-20261106T100540Z",
+      "source": {
+        "platform": "poki",
+        "url": "https://poki.com/zh",
+        "method": "public_rendered_ui_cloud_browser",
+        "access_context": "public_page_no_authentication_performed",
+        "ui_language_observed": "Chinese",
+        "browser_environment": "assistant_cloud_browser_not_user_computer"
+      },
+      "observation_window_utc": {
+        "start": "2026-11-06T10:00:27.872Z",
+        "end": "2026-11-06T10:04:07.394Z"
+      },
+      "partition": {
+        "timezone": "Asia/Shanghai",
+        "date": "2026-11-06"
+      },
+      "scope": {
+        "surface": "homepage_explicit_top_five_and_five_detail_attempts",
+        "query": null,
+        "sort": null,
+        "sampling_rule": "Up to the first 10 games in the visible homepage 热门免费游戏 numbered list; the rendered list explicitly contains only 5, all retained. Inspect the first 5 linked details. No filler games added.",
+        "coverage": "bounded_nonrandom_sample",
+        "record_count": 5,
+        "detail_pages_inspected": 5,
+        "detail_pages_with_metadata": 4,
+        "section_name_raw": "热门免费游戏",
+        "section_definition_raw": "根据实时游玩热度统计，这些是 Poki 上目前最热门的 5 大当红游戏 。",
+        "section_definition_observed_at_utc": "2026-11-06T10:00:27.872Z",
+        "requested_maximum_records": 10,
+        "available_numbered_records": 5,
+        "position_semantics": "Explicit numbered position in the homepage 热门免费游戏 list; source-claimed real-time play popularity without disclosed formula. Not an independently verified global rank, and not interchangeable with detail-page popularity rank.",
+        "source_extensions": {
+          "section_count": 1,
+          "detail_error_count": 1,
+          "online_metric_observed_count": 1,
+          "downloaded_cover_count": 4,
+          "failed_cover_download_count": 0,
+          "missing_cover_count": 1,
+          "unique_detail_page_count": 5,
+          "detail_navigation_note": "Five linked details inspected after scheduled start. Final hydrated detail metadata re-read at 10:03:21 UTC. Four exact DOM image URLs opened as image documents and downloaded with the cloud browser. No gameplay inputs, voting, authentication, or hidden APIs used."
+        }
+      },
+      "limitations": [
+        "Bounded public UI sample, not a complete catalog or independently verified heat score.",
+        "The homepage 热门免费游戏 numbered list contains only five games; no unrelated entries added to fill the requested maximum of ten.",
+        "Homepage numbered positions and detail popularity ranks are separate displays and may disagree.",
+        "Likes/dislikes use rounded source abbreviations. Votes are not plays, unique users or concurrency.",
+        "Date labels retain month-level precision; no exact release date invented. Level Devil release month changed during page hydration and both observations are retained.",
+        "Level Devil online label 5,000+ is preserved as a source lower bound, not exact CCU. Population and measurement window are unspecified; the other four records have no numeric online observation.",
+        "Subway Surfers detail title shows 404未找到结果 and rendered error text says the page does not exist; HTTP response status is not exposed. This is not a permanent delisting claim.",
+        "Game frames may auto-load on detail visits; no gameplay inputs, voting, login or hidden APIs used.",
+        "Four covers were freshly downloaded from exact DOM image URLs. Decoded bytes are PNG, independently verified and content-addressed; all match existing repository assets.",
+        "Short-interval source changes may reflect hydration, display or cache differences; no growth or popularity velocity inferred.",
+        "The initial Level Devil direct image-locator download exceeded the tool execution timeout and returned no usable file path. A subsequent download from the exact observed image document succeeded; no timed-out result was counted as an asset."
+      ],
+      "records": [
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://poki.com/zh/g/level-devil",
+            "identity_key": "poki:game:url:https://poki.com/zh/g/level-devil",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Level Devil",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-11-06T10:03:21.231Z",
+          "game_associations": [
+            {
+              "type": "genre",
+              "label_raw": "技巧游戏",
+              "basis": "fresh rendered detail genre field",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://poki.com/zh",
+            "observed_at_utc": "2026-11-06T10:00:27.872Z",
+            "section_name_raw": "热门免费游戏",
+            "section_definition_raw": "根据实时游玩热度统计，这些是 Poki 上目前最热门的 5 大当红游戏 。",
+            "display_position": 1,
+            "position_basis": "explicit_numbered_homepage_list",
+            "platform_rank": 1,
+            "ranking_method": "site_claim_real_time_play_popularity_no_formula_disclosed",
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Homepage numbered position and detail-page popularity rank are separate source displays; not reconciled.",
+            "section_definition_observed_at_utc": "2026-11-06T10:00:27.872Z"
+          },
+          "metrics": [
+            {
+              "name": "poki.homepage_rating",
+              "value": 4.4,
+              "unit": "rating_score",
+              "raw_value": "4.4⭐",
+              "raw_text": "4.4⭐",
+              "semantics": "Homepage star rating, not a play count or popularity growth.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh",
+              "observed_at_utc": "2026-11-06T10:00:27.872Z"
+            },
+            {
+              "name": "poki.rating",
+              "value": 4.4,
+              "unit": "rating_score",
+              "raw_value": "4.4",
+              "raw_text": "4.4",
+              "semantics": "Displayed detail rating; scale maximum not expressly shown in inspected metadata.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z"
+            },
+            {
+              "name": "poki.likes",
+              "value": 3600000,
+              "unit": "likes",
+              "raw_value": "3.6M",
+              "raw_text": "3.6M\n喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.dislikes",
+              "value": 631900,
+              "unit": "dislikes",
+              "raw_value": "631.9K",
+              "raw_text": "631.9K\n不喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.rating_votes",
+              "value": 4272392,
+              "unit": "votes",
+              "raw_value": "4,272,392",
+              "raw_text": "评分\n4.4 (4,272,392 次投票)",
+              "semantics": "Detail rating vote total; preserve independently of abbreviated likes/dislikes.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z"
+            },
+            {
+              "name": "poki.online_display",
+              "value": 5000,
+              "unit": "online_unspecified",
+              "raw_value": "5,000+",
+              "raw_text": "在线\n5,000+",
+              "semantics": "Label is 在线. User/concurrency definition and measurement window not given; do not claim exact CCU or active users.",
+              "availability": "observed",
+              "precision": "lower_bound_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z",
+              "comparison_operator": ">=",
+              "parsing_rule": "Remove grouping commas; trailing + is a lower-bound display, not an exact count."
+            },
+            {
+              "name": "poki.detail_popularity_rank",
+              "value": 8,
+              "unit": "rank",
+              "raw_value": "8",
+              "raw_text": "热门\n#8",
+              "semantics": "Detail-page 热门 rank, independent of homepage numbered top-five list; scope/method unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z"
+            },
+            {
+              "name": "poki.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z"
+            },
+            {
+              "name": "poki.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/level-devil",
+              "observed_at_utc": "2026-11-06T10:03:21.231Z"
+            }
+          ],
+          "source_extensions": {
+            "metadata_observed_at_utc": "2026-11-06T10:03:21.231Z",
+            "detail_page_status": "inspected",
+            "detail_error_raw": null,
+            "developer": "Unept",
+            "release_date_raw": "2023年11月",
+            "latest_update_raw": "2026年11月",
+            "genre_raw": "技巧游戏",
+            "platforms_raw": "电脑, 手机和平板",
+            "gameplay_summary": null,
+            "metadata_conflicts": [
+              {
+                "field": "release_date",
+                "initial_raw": "2023年12月",
+                "initial_observed_at_utc": "2026-11-06T10:00:38.864Z",
+                "later_raw": "2023年11月",
+                "later_observed_at_utc": "2026-11-06T10:03:21.231Z",
+                "note": "Same page changed after hydration without a new navigation. Latest observed value is primary; both source displays retained."
+              }
+            ],
+            "online_display_observation_note": "Numeric 在线 5,000+ appeared in the later hydrated page and is recorded as a lower bound.",
+            "page_state_changes": [
+              {
+                "field": "poki.online_display",
+                "initial_raw": null,
+                "initial_observed_at_utc": "2026-11-06T10:00:38.864Z",
+                "later_raw": "5,000+",
+                "later_observed_at_utc": "2026-11-06T10:03:21.231Z",
+                "note": "Numeric online label absent at initial capture but visible on later inspection. Not a measured rise from zero."
+              }
+            ]
+          },
+          "cover": {
+            "source_url": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/701e10b108ed7a0c68c738c46c9a705a/level-devil-logo.png",
+            "fetched_at_utc": "2026-11-06T10:03:41.072Z",
+            "status": "downloaded",
+            "repository_path": "assets/covers/poki/62c324d8fe13c73f8920a1c1df4a6ff1d5aa9a1722f7f239a240e5c1bf864f7e.png",
+            "sha256": "62c324d8fe13c73f8920a1c1df4a6ff1d5aa9a1722f7f239a240e5c1bf864f7e",
+            "mime_type": "image/png",
+            "byte_size": 3139,
+            "width": 314,
+            "height": 314,
+            "validation": {
+              "image_decoded": true,
+              "format_detected": "PNG",
+              "magic_hex": "89504e470d0a1a0a0000000d49484452",
+              "sha256_recomputed": true
+            },
+            "source_page_url": "https://poki.com/zh/g/level-devil",
+            "observed_at_utc": "2026-11-06T10:03:21.231Z",
+            "http_status": null,
+            "http_content_type": null,
+            "download_attempts": 2,
+            "failure_reason": null,
+            "download_attempt_completed_at_utc": "2026-11-06T10:03:41.072Z",
+            "download_method": "cloud_browser_locator_downloadMedia_on_observed_image_document",
+            "asset_reuse_basis": "Fresh downloaded bytes match existing content-addressed repository path.",
+            "prior_attempt_note": "Initial direct detail-image download timed out and returned no file path. The exact observed image document was then downloaded successfully."
+          },
+          "description": {
+            "text": "操控角色到达关卡终点，同时应对突然出现的陷阱和变化的平台。",
+            "source_urls": [
+              "https://poki.com/zh/g/level-devil"
+            ],
+            "basis": "Original short Chinese factual summary of freshly read detail text; not gameplay-tested.",
+            "language": "zh-CN",
+            "observed_at_utc": "2026-11-06T10:00:38.864Z",
+            "generated_at_utc": "2026-11-06T10:05:40Z",
+            "status": "generated",
+            "is_generated": true
+          },
+          "evidence": {
+            "initial_detail_excerpt_file": "raw/detail0.json",
+            "final_detail_excerpt_file": "raw/final_details.json",
+            "home_excerpt_file": "raw/home.json",
+            "description_excerpt_file": "raw/detail0.json",
+            "metadata_storage_note": "Local evidence files contain bounded factual DOM extracts and short description excerpts, not full page text. They are not repository-relative dependencies."
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://poki.com/zh/g/smash-karts",
+            "identity_key": "poki:game:url:https://poki.com/zh/g/smash-karts",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Smash Karts",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-11-06T10:03:21.268Z",
+          "game_associations": [
+            {
+              "type": "genre",
+              "label_raw": "开车游戏",
+              "basis": "fresh rendered detail genre field",
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://poki.com/zh",
+            "observed_at_utc": "2026-11-06T10:00:27.872Z",
+            "section_name_raw": "热门免费游戏",
+            "section_definition_raw": "根据实时游玩热度统计，这些是 Poki 上目前最热门的 5 大当红游戏 。",
+            "display_position": 2,
+            "position_basis": "explicit_numbered_homepage_list",
+            "platform_rank": 2,
+            "ranking_method": "site_claim_real_time_play_popularity_no_formula_disclosed",
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Homepage numbered position and detail-page popularity rank are separate source displays; not reconciled.",
+            "section_definition_observed_at_utc": "2026-11-06T10:00:27.872Z"
+          },
+          "metrics": [
+            {
+              "name": "poki.homepage_rating",
+              "value": 4.4,
+              "unit": "rating_score",
+              "raw_value": "4.4⭐",
+              "raw_text": "4.4⭐",
+              "semantics": "Homepage star rating, not a play count or popularity growth.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh",
+              "observed_at_utc": "2026-11-06T10:00:27.872Z"
+            },
+            {
+              "name": "poki.rating",
+              "value": 4.4,
+              "unit": "rating_score",
+              "raw_value": "4.4",
+              "raw_text": "4.4",
+              "semantics": "Displayed detail rating; scale maximum not expressly shown in inspected metadata.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            },
+            {
+              "name": "poki.likes",
+              "value": 1300000,
+              "unit": "likes",
+              "raw_value": "1.3M",
+              "raw_text": "1.3M\n喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.dislikes",
+              "value": 223300,
+              "unit": "dislikes",
+              "raw_value": "223.3K",
+              "raw_text": "223.3K\n不喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.rating_votes",
+              "value": 1519954,
+              "unit": "votes",
+              "raw_value": "1,519,954",
+              "raw_text": "评分\n4.4 (1,519,954 次投票)",
+              "semantics": "Detail rating vote total; preserve independently of abbreviated likes/dislikes.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            },
+            {
+              "name": "poki.online_display",
+              "value": null,
+              "unit": "online_unspecified",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Label is 在线. User/concurrency definition and measurement window not given; do not claim exact CCU or active users.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            },
+            {
+              "name": "poki.detail_popularity_rank",
+              "value": 34,
+              "unit": "rank",
+              "raw_value": "34",
+              "raw_text": "热门\n#34",
+              "semantics": "Detail-page 热门 rank, independent of homepage numbered top-five list; scope/method unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            },
+            {
+              "name": "poki.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            },
+            {
+              "name": "poki.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/smash-karts",
+              "observed_at_utc": "2026-11-06T10:03:21.268Z"
+            }
+          ],
+          "source_extensions": {
+            "metadata_observed_at_utc": "2026-11-06T10:03:21.268Z",
+            "detail_page_status": "inspected",
+            "detail_error_raw": null,
+            "developer": "Tall Team",
+            "release_date_raw": "2020年4月",
+            "latest_update_raw": "2026年10月",
+            "genre_raw": "开车游戏",
+            "platforms_raw": "电脑, 手机和平板",
+            "gameplay_summary": null,
+            "metadata_conflicts": [],
+            "online_display_observation_note": "No numeric 在线 display observed in the inspected detail; prose references to online play are not counts."
+          },
+          "cover": {
+            "source_url": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/9c9e529b14731be871b07b89660bbc2a/smash-karts-logo.png",
+            "fetched_at_utc": "2026-11-06T10:03:41.176Z",
+            "status": "downloaded",
+            "repository_path": "assets/covers/poki/276cfaa64b0922a831e61b9cee5ddae20d654ba329db60d82a0e13512388b626.png",
+            "sha256": "276cfaa64b0922a831e61b9cee5ddae20d654ba329db60d82a0e13512388b626",
+            "mime_type": "image/png",
+            "byte_size": 32166,
+            "width": 314,
+            "height": 314,
+            "validation": {
+              "image_decoded": true,
+              "format_detected": "PNG",
+              "magic_hex": "89504e470d0a1a0a0000000d49484452",
+              "sha256_recomputed": true
+            },
+            "source_page_url": "https://poki.com/zh/g/smash-karts",
+            "observed_at_utc": "2026-11-06T10:03:21.268Z",
+            "http_status": null,
+            "http_content_type": null,
+            "download_attempts": 1,
+            "failure_reason": null,
+            "download_attempt_completed_at_utc": "2026-11-06T10:03:41.176Z",
+            "download_method": "cloud_browser_locator_downloadMedia_on_observed_image_document",
+            "asset_reuse_basis": "Fresh downloaded bytes match existing content-addressed repository path."
+          },
+          "description": {
+            "text": "驾驶卡丁车在多人竞技场收集武器、攻击对手并争取更高分数。",
+            "source_urls": [
+              "https://poki.com/zh/g/smash-karts"
+            ],
+            "basis": "Original short Chinese factual summary of freshly read detail text; not gameplay-tested.",
+            "language": "zh-CN",
+            "observed_at_utc": "2026-11-06T10:04:07.352Z",
+            "generated_at_utc": "2026-11-06T10:05:40Z",
+            "status": "generated",
+            "is_generated": true
+          },
+          "evidence": {
+            "initial_detail_excerpt_file": "raw/detail1.json",
+            "final_detail_excerpt_file": "raw/final_details.json",
+            "home_excerpt_file": "raw/home.json",
+            "description_excerpt_file": "raw/description_supplement.json",
+            "metadata_storage_note": "Local evidence files contain bounded factual DOM extracts and short description excerpts, not full page text. They are not repository-relative dependencies."
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://poki.com/zh/g/subway-surfers",
+            "identity_key": "poki:game:url:https://poki.com/zh/g/subway-surfers",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Subway Surfers",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-11-06T10:00:58.132Z",
+          "game_associations": [],
+          "selection_evidence": {
+            "source_url": "https://poki.com/zh",
+            "observed_at_utc": "2026-11-06T10:00:27.872Z",
+            "section_name_raw": "热门免费游戏",
+            "section_definition_raw": "根据实时游玩热度统计，这些是 Poki 上目前最热门的 5 大当红游戏 。",
+            "display_position": 3,
+            "position_basis": "explicit_numbered_homepage_list",
+            "platform_rank": 3,
+            "ranking_method": "site_claim_real_time_play_popularity_no_formula_disclosed",
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Homepage numbered position and detail-page popularity rank are separate source displays; not reconciled.",
+            "section_definition_observed_at_utc": "2026-11-06T10:00:27.872Z"
+          },
+          "metrics": [
+            {
+              "name": "poki.homepage_rating",
+              "value": 4.4,
+              "unit": "rating_score",
+              "raw_value": "4.4⭐",
+              "raw_text": "4.4⭐",
+              "semantics": "Homepage star rating, not a play count or popularity growth.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh",
+              "observed_at_utc": "2026-11-06T10:00:27.872Z"
+            },
+            {
+              "name": "poki.rating",
+              "value": null,
+              "unit": "rating_score",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Displayed detail rating; scale maximum not expressly shown in inspected metadata.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.likes",
+              "value": null,
+              "unit": "likes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.dislikes",
+              "value": null,
+              "unit": "dislikes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.rating_votes",
+              "value": null,
+              "unit": "votes",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail rating vote total; preserve independently of abbreviated likes/dislikes.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.online_display",
+              "value": null,
+              "unit": "online_unspecified",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Label is 在线. User/concurrency definition and measurement window not given; do not claim exact CCU or active users.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.detail_popularity_rank",
+              "value": null,
+              "unit": "rank",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Detail-page 热门 rank, independent of homepage numbered top-five list; scope/method unspecified.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            },
+            {
+              "name": "poki.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_available_detail_error",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/subway-surfers",
+              "observed_at_utc": "2026-11-06T10:00:58.132Z"
+            }
+          ],
+          "source_extensions": {
+            "metadata_observed_at_utc": "2026-11-06T10:00:58.132Z",
+            "detail_page_status": "error_404_page_title",
+            "detail_error_raw": "404未找到结果; ERROR\n很抱歉，您搜索的页面并不存在。",
+            "developer": null,
+            "release_date_raw": null,
+            "latest_update_raw": null,
+            "genre_raw": null,
+            "platforms_raw": null,
+            "gameplay_summary": null,
+            "metadata_conflicts": [],
+            "online_display_observation_note": "No numeric 在线 display observed in the inspected detail; prose references to online play are not counts."
+          },
+          "cover": {
+            "source_url": null,
+            "fetched_at_utc": null,
+            "repository_path": null,
+            "sha256": null,
+            "mime_type": null,
+            "byte_size": null,
+            "width": null,
+            "height": null,
+            "http_status": null,
+            "http_content_type": null,
+            "source_page_url": "https://poki.com/zh/g/subway-surfers",
+            "observed_at_utc": "2026-11-06T10:00:58.132Z",
+            "status": "not_observed",
+            "download_attempts": 0,
+            "failure_reason": "No exact-title Subway Surfers cover observed on the homepage or 404 detail page. No other game image substituted."
+          },
+          "description": {
+            "text": "在无尽跑酷中躲避列车和沿途障碍，挑战更远的奔跑纪录。",
+            "source_urls": [
+              "https://poki.com/zh"
+            ],
+            "basis": "Original short Chinese factual summary of freshly read homepage text; detail unavailable.",
+            "language": "zh-CN",
+            "observed_at_utc": "2026-11-06T10:00:27.872Z",
+            "generated_at_utc": "2026-11-06T10:05:40Z",
+            "status": "generated",
+            "is_generated": true
+          },
+          "evidence": {
+            "initial_detail_excerpt_file": "raw/detail2.json",
+            "final_detail_excerpt_file": null,
+            "home_excerpt_file": "raw/home.json",
+            "description_excerpt_file": "raw/home.json",
+            "metadata_storage_note": "Local evidence files contain bounded factual DOM extracts and short description excerpts, not full page text. They are not repository-relative dependencies."
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+            "identity_key": "poki:game:url:https://poki.com/zh/g/blocky-blast-puzzle",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Blocky Blast Puzzle",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-11-06T10:03:21.292Z",
+          "game_associations": [
+            {
+              "type": "genre",
+              "label_raw": "益智游戏",
+              "basis": "fresh rendered detail genre field",
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://poki.com/zh",
+            "observed_at_utc": "2026-11-06T10:00:27.872Z",
+            "section_name_raw": "热门免费游戏",
+            "section_definition_raw": "根据实时游玩热度统计，这些是 Poki 上目前最热门的 5 大当红游戏 。",
+            "display_position": 4,
+            "position_basis": "explicit_numbered_homepage_list",
+            "platform_rank": 4,
+            "ranking_method": "site_claim_real_time_play_popularity_no_formula_disclosed",
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Homepage numbered position and detail-page popularity rank are separate source displays; not reconciled.",
+            "section_definition_observed_at_utc": "2026-11-06T10:00:27.872Z"
+          },
+          "metrics": [
+            {
+              "name": "poki.homepage_rating",
+              "value": 4.3,
+              "unit": "rating_score",
+              "raw_value": "4.3⭐",
+              "raw_text": "4.3⭐",
+              "semantics": "Homepage star rating, not a play count or popularity growth.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh",
+              "observed_at_utc": "2026-11-06T10:00:27.872Z"
+            },
+            {
+              "name": "poki.rating",
+              "value": 4.3,
+              "unit": "rating_score",
+              "raw_value": "4.3",
+              "raw_text": "4.3",
+              "semantics": "Displayed detail rating; scale maximum not expressly shown in inspected metadata.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            },
+            {
+              "name": "poki.likes",
+              "value": 649600,
+              "unit": "likes",
+              "raw_value": "649.6K",
+              "raw_text": "649.6K\n喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.dislikes",
+              "value": 127700,
+              "unit": "dislikes",
+              "raw_value": "127.7K",
+              "raw_text": "127.7K\n不喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.rating_votes",
+              "value": 777345,
+              "unit": "votes",
+              "raw_value": "777,345",
+              "raw_text": "评分\n4.3 (777,345 次投票)",
+              "semantics": "Detail rating vote total; preserve independently of abbreviated likes/dislikes.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            },
+            {
+              "name": "poki.online_display",
+              "value": null,
+              "unit": "online_unspecified",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Label is 在线. User/concurrency definition and measurement window not given; do not claim exact CCU or active users.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            },
+            {
+              "name": "poki.detail_popularity_rank",
+              "value": 9,
+              "unit": "rank",
+              "raw_value": "9",
+              "raw_text": "热门\n#9",
+              "semantics": "Detail-page 热门 rank, independent of homepage numbered top-five list; scope/method unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            },
+            {
+              "name": "poki.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            },
+            {
+              "name": "poki.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+              "observed_at_utc": "2026-11-06T10:03:21.292Z"
+            }
+          ],
+          "source_extensions": {
+            "metadata_observed_at_utc": "2026-11-06T10:03:21.292Z",
+            "detail_page_status": "inspected",
+            "detail_error_raw": null,
+            "developer": "OPlay Games",
+            "release_date_raw": "2024年4月",
+            "latest_update_raw": "2026年3月",
+            "genre_raw": "益智游戏",
+            "platforms_raw": "电脑, 手机和平板",
+            "gameplay_summary": null,
+            "metadata_conflicts": [],
+            "online_display_observation_note": "No numeric 在线 display observed in the inspected detail; prose references to online play are not counts."
+          },
+          "cover": {
+            "source_url": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/291aaf2dcf5c1322558a9c038b3c5251/blocky-blast-puzzle-logo.png",
+            "fetched_at_utc": "2026-11-06T10:03:41.293Z",
+            "status": "downloaded",
+            "repository_path": "assets/covers/poki/9efc85f9ca9210b0941d95e5f72ba4515e8a02b41ccda0a9cb3494e05464c78a.png",
+            "sha256": "9efc85f9ca9210b0941d95e5f72ba4515e8a02b41ccda0a9cb3494e05464c78a",
+            "mime_type": "image/png",
+            "byte_size": 15725,
+            "width": 314,
+            "height": 314,
+            "validation": {
+              "image_decoded": true,
+              "format_detected": "PNG",
+              "magic_hex": "89504e470d0a1a0a0000000d49484452",
+              "sha256_recomputed": true
+            },
+            "source_page_url": "https://poki.com/zh/g/blocky-blast-puzzle",
+            "observed_at_utc": "2026-11-06T10:03:21.292Z",
+            "http_status": null,
+            "http_content_type": null,
+            "download_attempts": 1,
+            "failure_reason": null,
+            "download_attempt_completed_at_utc": "2026-11-06T10:03:41.293Z",
+            "download_method": "cloud_browser_locator_downloadMedia_on_observed_image_document",
+            "asset_reuse_basis": "Fresh downloaded bytes match existing content-addressed repository path."
+          },
+          "description": {
+            "text": "把不同形状的方块放入棋盘，填满整行或整列以消除方块并腾出空间。",
+            "source_urls": [
+              "https://poki.com/zh/g/blocky-blast-puzzle"
+            ],
+            "basis": "Original short Chinese factual summary of freshly read detail text; not gameplay-tested.",
+            "language": "zh-CN",
+            "observed_at_utc": "2026-11-06T10:04:07.373Z",
+            "generated_at_utc": "2026-11-06T10:05:40Z",
+            "status": "generated",
+            "is_generated": true
+          },
+          "evidence": {
+            "initial_detail_excerpt_file": "raw/detail3.json",
+            "final_detail_excerpt_file": "raw/final_details.json",
+            "home_excerpt_file": "raw/home.json",
+            "description_excerpt_file": "raw/description_supplement.json",
+            "metadata_storage_note": "Local evidence files contain bounded factual DOM extracts and short description excerpts, not full page text. They are not repository-relative dependencies."
+          }
+        },
+        {
+          "entity": {
+            "type": "game",
+            "platform_id": null,
+            "canonical_url": "https://poki.com/zh/g/drive-mad",
+            "identity_key": "poki:game:url:https://poki.com/zh/g/drive-mad",
+            "identity_basis": "observed_url_fallback",
+            "title_raw": "Drive Mad",
+            "published_at_utc": null
+          },
+          "observed_at_utc": "2026-11-06T10:03:21.320Z",
+          "game_associations": [
+            {
+              "type": "genre",
+              "label_raw": "开车游戏",
+              "basis": "fresh rendered detail genre field",
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            }
+          ],
+          "selection_evidence": {
+            "source_url": "https://poki.com/zh",
+            "observed_at_utc": "2026-11-06T10:00:27.872Z",
+            "section_name_raw": "热门免费游戏",
+            "section_definition_raw": "根据实时游玩热度统计，这些是 Poki 上目前最热门的 5 大当红游戏 。",
+            "display_position": 5,
+            "position_basis": "explicit_numbered_homepage_list",
+            "platform_rank": 5,
+            "ranking_method": "site_claim_real_time_play_popularity_no_formula_disclosed",
+            "region_label_raw": null,
+            "personalization_status": "unknown",
+            "note": "Homepage numbered position and detail-page popularity rank are separate source displays; not reconciled.",
+            "section_definition_observed_at_utc": "2026-11-06T10:00:27.872Z"
+          },
+          "metrics": [
+            {
+              "name": "poki.homepage_rating",
+              "value": 4.3,
+              "unit": "rating_score",
+              "raw_value": "4.3 ⭐",
+              "raw_text": "4.3 ⭐",
+              "semantics": "Homepage star rating, not a play count or popularity growth.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh",
+              "observed_at_utc": "2026-11-06T10:00:27.872Z"
+            },
+            {
+              "name": "poki.rating",
+              "value": 4.3,
+              "unit": "rating_score",
+              "raw_value": "4.3",
+              "raw_text": "4.3",
+              "semantics": "Displayed detail rating; scale maximum not expressly shown in inspected metadata.",
+              "availability": "observed",
+              "precision": "one_decimal",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            },
+            {
+              "name": "poki.likes",
+              "value": 3300000,
+              "unit": "likes",
+              "raw_value": "3.3M",
+              "raw_text": "3.3M\n喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.dislikes",
+              "value": 678500,
+              "unit": "dislikes",
+              "raw_value": "678.5K",
+              "raw_text": "678.5K\n不喜欢",
+              "semantics": "Displayed vote count, not unique players or plays. Exact underlying count and accumulation period unspecified.",
+              "availability": "observed",
+              "precision": "approximate_source_abbreviation",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z",
+              "parsing_rule": "K × 1000; M × 1000000. Rounded source abbreviations; exact underlying count and rounding method unknown."
+            },
+            {
+              "name": "poki.rating_votes",
+              "value": 3978738,
+              "unit": "votes",
+              "raw_value": "3,978,738",
+              "raw_text": "评分\n4.3 (3,978,738 次投票)",
+              "semantics": "Detail rating vote total; preserve independently of abbreviated likes/dislikes.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            },
+            {
+              "name": "poki.online_display",
+              "value": null,
+              "unit": "online_unspecified",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "Label is 在线. User/concurrency definition and measurement window not given; do not claim exact CCU or active users.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            },
+            {
+              "name": "poki.detail_popularity_rank",
+              "value": 6,
+              "unit": "rank",
+              "raw_value": "6",
+              "raw_text": "热门\n#6",
+              "semantics": "Detail-page 热门 rank, independent of homepage numbered top-five list; scope/method unspecified.",
+              "availability": "observed",
+              "precision": "integer_as_displayed",
+              "time_basis": "unspecified_by_source",
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            },
+            {
+              "name": "poki.plays",
+              "value": null,
+              "unit": "plays",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No Poki-specific play-count metric observed. The description cites a broader Fancade lifetime total since 2019, not current Poki plays.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            },
+            {
+              "name": "poki.active_users",
+              "value": null,
+              "unit": "users",
+              "raw_value": null,
+              "raw_text": null,
+              "semantics": "No matching metric was observed; not inferred from votes, online label, or ranking.",
+              "availability": "not_observed_in_inspected_detail",
+              "precision": null,
+              "time_basis": null,
+              "source_url": "https://poki.com/zh/g/drive-mad",
+              "observed_at_utc": "2026-11-06T10:03:21.320Z"
+            }
+          ],
+          "source_extensions": {
+            "metadata_observed_at_utc": "2026-11-06T10:03:21.320Z",
+            "detail_page_status": "inspected",
+            "detail_error_raw": null,
+            "developer": "Fancade",
+            "release_date_raw": "2022年7月",
+            "latest_update_raw": "2026年9月",
+            "genre_raw": "开车游戏",
+            "platforms_raw": "电脑, 手机和平板",
+            "gameplay_summary": null,
+            "metadata_conflicts": [
+              {
+                "field": "release_date",
+                "metadata_raw": "2022年7月",
+                "description_raw": "根据 Fancade 的数据，自 2019 年发布以来，《Drive Mad》的 游戏次数已超过 3 亿次。",
+                "observed_at_utc": "2026-11-06T10:01:23.995Z",
+                "note": "Description cites 2019 and Fancade lifetime game plays above 300 million; metadata says July 2022. Scope not independently reconciled. The broader claim is not recorded as Poki plays."
+              }
+            ],
+            "online_display_observation_note": "No numeric 在线 display observed in the inspected detail; prose references to online play are not counts."
+          },
+          "cover": {
+            "source_url": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/591d984dcac4fb694f3f8195bb8f6118/drive-mad-logo.png",
+            "fetched_at_utc": "2026-11-06T10:03:41.392Z",
+            "status": "downloaded",
+            "repository_path": "assets/covers/poki/459bd166343261269599918a2e19ee93f16df80840a9348ecef5d94f310a7265.png",
+            "sha256": "459bd166343261269599918a2e19ee93f16df80840a9348ecef5d94f310a7265",
+            "mime_type": "image/png",
+            "byte_size": 23112,
+            "width": 314,
+            "height": 314,
+            "validation": {
+              "image_decoded": true,
+              "format_detected": "PNG",
+              "magic_hex": "89504e470d0a1a0a0000000d49484452",
+              "sha256_recomputed": true
+            },
+            "source_page_url": "https://poki.com/zh/g/drive-mad",
+            "observed_at_utc": "2026-11-06T10:03:21.320Z",
+            "http_status": null,
+            "http_content_type": null,
+            "download_attempts": 1,
+            "failure_reason": null,
+            "download_attempt_completed_at_utc": "2026-11-06T10:03:41.392Z",
+            "download_method": "cloud_browser_locator_downloadMedia_on_observed_image_document",
+            "asset_reuse_basis": "Fresh downloaded bytes match existing content-addressed repository path."
+          },
+          "description": {
+            "text": "控制车辆通过逐渐变难的物理关卡，在跳跃和特殊重力环境中保持平衡。",
+            "source_urls": [
+              "https://poki.com/zh/g/drive-mad"
+            ],
+            "basis": "Original short Chinese factual summary of freshly read detail text; not gameplay-tested.",
+            "language": "zh-CN",
+            "observed_at_utc": "2026-11-06T10:04:07.394Z",
+            "generated_at_utc": "2026-11-06T10:05:40Z",
+            "status": "generated",
+            "is_generated": true
+          },
+          "evidence": {
+            "initial_detail_excerpt_file": "raw/detail4.json",
+            "final_detail_excerpt_file": "raw/final_details.json",
+            "home_excerpt_file": "raw/home.json",
+            "description_excerpt_file": "raw/description_supplement.json",
+            "metadata_storage_note": "Local evidence files contain bounded factual DOM extracts and short description excerpts, not full page text. They are not repository-relative dependencies."
+          }
+        }
+      ],
+      "preflight": {
+        "repository": "xuebinlu1224-fsn/GameHotData",
+        "readme_path": "README.md",
+        "readme_blob_sha": "40ab2223f1df2c23777bfd88356ccf8edcfb827f",
+        "latest_snapshot_path": "2026/11/06/poki_20261105T220534Z.json",
+        "latest_snapshot_blob_sha": "f131ba10f3934fabb513d4b336c40648140c86ae",
+        "use": "Schema and interpretation only. Metrics and evidence freshly observed in this run.",
+        "repository_head_commit_sha": "0e9ccd9a55b0823cc7e54cb4620e4db2f94b92cd",
+        "repository_tree_sha": "6aeaf17d4b7f4d41e9a73f8e80d1595d690bd4c7"
+      }
+    }
+  ],
+  "collection_status": "partial",
+  "collection_status_note": "All five available homepage entries inspected; one linked detail rendered an unavailable/404 page, retained as a partial record.",
+  "repository_context": {
+    "repository": "xuebinlu1224-fsn/GameHotData",
+    "readme_blob_sha": "40ab2223f1df2c23777bfd88356ccf8edcfb827f",
+    "latest_prior_snapshot_path": "2026/11/06/poki_20261106T040856Z.json",
+    "latest_prior_snapshot_blob_sha": "f18c4a932626713ed150975d5306259b6ca9fd14",
+    "prior_metrics_or_assets_carried_forward_without_fresh_observation": false
+  }
+}
